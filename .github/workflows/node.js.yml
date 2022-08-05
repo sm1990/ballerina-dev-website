@@ -51,10 +51,10 @@ jobs:
         git commit --allow-empty -m 'Deploy website'
         git push --set-upstream origin deploy-website-$GITHUB_SHA
         echo 'Successfully pushed to deploy-website-$GITHUB_SHA branch'
-      - name: Create pull request for new site
-        shell: bash
-        run: |
-          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          bin/hub pull-request -b website-revamp -m '[Automated] Deploy website'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create pull request for new site
+      shell: bash
+      run: |
+        curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+        bin/hub pull-request -b website-revamp -m '[Automated] Deploy website'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
