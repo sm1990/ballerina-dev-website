@@ -24,5 +24,5 @@ jobs:
         git config --global user.name "ballerina-bot"
 
         git remote add dev https://github.com/ballerina-platform/ballerina-dev-website.git
-        git pull dev prod-sync -X theirs --no-edit --no-rebase
+        git pull website-revamp prod-sync -X theirs --no-edit --no-rebase
         ls
