@@ -18,4 +18,4 @@ jobs:
     - name: Sync production repo with prod-sync branch
       run: |
         cd ballerina-platform.github.io
-        ll
+        ls
