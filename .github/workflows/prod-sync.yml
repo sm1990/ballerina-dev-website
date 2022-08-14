@@ -19,7 +19,6 @@ jobs:
       run: |
         cd ballerina-platform.github.io
         git pull origin master
-        git rm -r .
 
         git config --global user.email "ballerina-bot@ballerina.org"
         git config --global user.name "ballerina-bot"
