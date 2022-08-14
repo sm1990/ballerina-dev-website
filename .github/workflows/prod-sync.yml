@@ -24,5 +24,6 @@ jobs:
         git config --global user.name "ballerina-bot"
 
         git remote add gh-pages https://github.com/ballerina-platform/ballerina-dev-website.git
+        git rm -r .
         git pull gh-pages prod-sync -X theirs --no-edit --no-rebase
         ls
