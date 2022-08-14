@@ -23,6 +23,6 @@ jobs:
         git config --global user.email "ballerina-bot@ballerina.org"
         git config --global user.name "ballerina-bot"
 
-        git remote add dev https://github.com/ballerina-platform/ballerina-dev-website.git
+        git remote add website-revamp https://github.com/ballerina-platform/ballerina-dev-website.git
         git pull website-revamp prod-sync -X theirs --no-edit --no-rebase
         ls
