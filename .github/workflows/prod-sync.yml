@@ -1,0 +1,21 @@
+name: Push changes of prod-sync to prod-site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - prod-sync
+
+jobs:
+  prod-sync:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
+    steps:   
+    - name: Clone production b.io
+      run: git clone https://ballerina-bot:$GITHUB_TOKEN@github.com/ballerina-platform/ballerina-platform.github.io.git
+
+    - name: Sync production repo with prod-sync branch
+      run: |
+        cd ballerina-platform.github.io
+        ll
