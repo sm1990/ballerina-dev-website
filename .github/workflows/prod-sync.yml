@@ -18,4 +18,11 @@ jobs:
     - name: Sync production repo with prod-sync branch
       run: |
         cd ballerina-platform.github.io
+        git pull origin master
+
+        git config --global user.email "ballerina-bot@ballerina.org"
+        git config --global user.name "ballerina-bot"
+
+        git remote add dev https://github.com/ballerina-platform/ballerina-dev-website.git
+        git pull dev prod-sync -X theirs --no-edit --no-rebase
         ls
