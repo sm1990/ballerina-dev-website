@@ -19,16 +19,4 @@ jobs:
       run: |
         cd ballerina-platform.github.io
         git pull origin master
-
-        git config --global user.email "saranimendisb@gmail.com"
-        git config --global user.name "sm1990"
-
-        git remote add gh-pages https://github.com/ballerina-platform/ballerina-dev-website.git
-        git pull gh-pages prod-sync -X theirs --no-edit --no-rebase
-        
-    - name: Push changes to prod website
-      shell: bash
-      run: |
-        cd ballerina-platform.github.io
-        curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
         ls
