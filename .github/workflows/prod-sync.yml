@@ -20,8 +20,8 @@ jobs:
         cd ballerina-platform.github.io
         git pull origin master
 
-        git config --global user.email "ballerina-bot@ballerina.org"
-        git config --global user.name "ballerina-bot"
+        git config --global user.email "saranimendisb@gmail.com"
+        git config --global user.name "sm1990"
 
         git remote add gh-pages https://github.com/ballerina-platform/ballerina-dev-website.git
         git pull gh-pages prod-sync -X theirs --no-edit --no-rebase
