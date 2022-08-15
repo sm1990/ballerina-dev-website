@@ -24,7 +24,7 @@ jobs:
         git config --global user.name "sm1990"
 
         git remote add gh-pages https://github.com/ballerina-platform/ballerina-dev-website.git
-        git pull dev prod-sync -X theirs --no-edit --no-rebase
+        git pull gh-pages prod-sync -X theirs --no-edit --no-rebase
         
     - name: Push changes to prod website
       shell: bash
