@@ -19,4 +19,5 @@ jobs:
       run: |
         cd ballerina-platform.github.io
         git pull origin master
+        git rm -r .
         ls
