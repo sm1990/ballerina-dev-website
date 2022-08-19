@@ -35,9 +35,9 @@ jobs:
           mkdir gh-pages
           cd gh-pages
           git init
-          git remote add origin https://github.com/sm1990/ballerina-dev-website.git
+          git remote add origin https://$GITHUB_TOKEN@github.com/sm1990/ballerina-dev-website.git
           git fetch origin
-          git checkout gh-pages
+          git checkout -b deploy-website-$GITHUB_SHA origin/gh-pages
 
       - name: Export static files
         run: npm run export
@@ -59,14 +59,14 @@ jobs:
           git config --global user.name "sm1990"
           git add .
           git commit --allow-empty -m 'Deploy website'
-          git push origin gh-pages
-          echo 'Successfully pushed to gh-pages ---deploy-website-$GITHUB_SHA branch'
+          git push origin deploy-website-$GITHUB_SHA
+          echo 'Successfully pushed to deploy-website-$GITHUB_SHA branch'
 
       - name: Create pull request for new site
         shell: bash
         run: |
           cd out
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          bin/hub push
+          bin/hub pull-request -b gh-pages -m '[Automated] Deploy website'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
