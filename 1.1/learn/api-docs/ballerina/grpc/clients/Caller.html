@@ -38,9 +38,18 @@
         color: #000000;
         text-decoration: underline;
     }
-    .cInfoBannerLink:hover{
+     .cInfoBannerLink:hover{
         color: #545454 !important;
         text-decoration: underline !important;
+    }
+   
+   
+    .content-wrapper{
+        padding-top: 2em !important;
+    }
+    @media only screen and (max-width: 992px) {
+        .content-wrapper {padding-top: 7em !important}
+
     }
 
 
@@ -96,9 +105,6 @@
                                     <select name="versions" id="versions" class="select-css">
                                         <option value="swan-lake" data-value="latest">Swan Lake</option>
                                         <option value="1.2">v1.2</option>
-                                        <option value="1.1">v1.1</option>
-                                        <option value="1.0">v1.0</option>
-                                   
                                     </select>
                                 </div>
                             </li>
@@ -1239,7 +1245,7 @@ contentWrapper.addEventListener("scroll", event => {
                     </li>
                 <li><a class="cBioFooterLink" href="https://stackoverflow.com/questions/tagged/ballerina" target="_blank"><img src="/img/stackoverflow.svg"/></a></li>
                 <li><a class="cBioFooterLink" href="https://twitter.com/ballerinalang" target="_blank"><img src="/img/twitter.svg"/></a></li>
-                <li><a class="cBioFooterLink" href="/community/slack/"><img src="/img/slack.svg"/></a></li>
+                <li><a class="cBioFooterLink" href="/community/slack/"><img src="/img/slack-2022.svg" style="width:17px; height:17px;"/></a></li>
                 </ul>
             <div class="pdframe"></div>
             </div>
@@ -1526,6 +1532,19 @@ pre[class*="language-"].line-numbers > code {
     window.onload = (event) => {
         ballerinaHighlighter.highlightSnippets();
     };
+</script>
+
+<script>
+$(document).ready(function(e) {
+    if($('#versions')) {
+      if($("option[value='1.1']")) { 
+        $("option[value='1.1']").remove();
+      }
+      if($("option[value='1.0']")) {
+        $("option[value='1.0']").remove();
+      }
+     }
+});
 </script>
 </body>
 </html>
