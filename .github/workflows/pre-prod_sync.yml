@@ -69,13 +69,13 @@ jobs:
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
           bin/hub pull-request -b gh-pages -m '[Automated] Deploy website'
 
-      - name: Merge the pr to gh-pages
+      - name: Merge the pr to gh2
         shell: bash
         run: |
-          git checkout origin/gh-pages
+          git checkout origin/gh2
           git remote -v
-          # git deploy-website-$GITHUB_SHA
-          # curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          # bin/hub merge origin/gh-pages
+          git deploy-website-$GITHUB_SHA
+          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          bin/hub merge origin/gh2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
