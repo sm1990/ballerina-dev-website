@@ -38,9 +38,17 @@
         color: #000000;
         text-decoration: underline;
     }
-    .cInfoBannerLink:hover{
+       .cInfoBannerLink:hover{
         color: #545454 !important;
         text-decoration: underline !important;
+    }
+   
+    .content-wrapper{
+        padding-top: 2em !important;
+    }
+    @media only screen and (max-width: 992px) {
+        .content-wrapper {padding-top: 7em !important}
+
     }
 </style>
 
@@ -95,10 +103,7 @@
                                     <!-- <lable class="cVlable">Version</lable> -->
                                     <select name="versions" id="versions" class="select-css">
                                         <option value="swan-lake" data-value="latest">Swan Lake</option>
-                                        <option value="1.2">v1.2</option>
-                                        <option value="1.1">v1.1</option>
-                                        <option value="1.0">v1.0</option>
-                                        <option value="0.991">v0.991</option>
+                                        <option value="1.2">v1.2</option>     
                                     </select>
                                 </div>
                             </li>

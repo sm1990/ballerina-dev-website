@@ -808,3 +808,36 @@ function blogContribution() {
     }
     return;
 }
+
+$(function() {
+    // var pathname = window.location.href;
+    var hash = window.location.hash;
+    
+    if (hash == '#consuming-services' ||
+        hash == '#working-with-data' ||
+        hash == '#restful-api' ||
+        hash == '#grpc-api' || 
+        hash == '#graphql-api' ||
+        hash == '#kafka-consumer' ||
+        hash == '#working-with-databases') {
+        
+                
+            $(".tab-pane").removeClass("active in");
+            $(".cSamplesList > li").removeClass('active');
+            $('a').filter("[href='"+hash+"']").parent().addClass('active')
+            $(hash).addClass("active in");
+            $("#ballerina-in-action")[0].scrollIntoView();       
+    
+    }
+
+});
+
+
+//Remove frontmatter from dom
+$(document).ready(function(e) {
+    var str=$('.cBallerina-io').html();
+    if (str.match(/---\nredirect_from:([\s\S]*?)---/gmi)) {
+        str = str.replace(/---\nredirect_from:([\s\S]*?)---/gmi, "");
+        $('.cBallerina-io').html(str);
+    }   
+});
