@@ -72,10 +72,12 @@ jobs:
       - name: Merge the pr to gh2
         shell: bash
         run: |
-          git checkout origin/gh2
-          git remote -v
-          git deploy-website-$GITHUB_SHA
-          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          bin/hub merge origin/gh2
+          git rebase gh-pages
+          git checkout gh-pages
+          git merge deploy-website-$GITHUB_SHA --no-ff
+          # git remote -v
+          # git deploy-website-$GITHUB_SHA
+          # curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          # bin/hub merge origin/gh2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
