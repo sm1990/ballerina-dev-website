@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_BASE_PATH: ""
-      GITHUB_TOKEN: ${{ secrets.website-token }}
+      GITHUB_TOKEN: ${{ secrets.web-token }}
     strategy:
       matrix:
         node-version: [16.x]
