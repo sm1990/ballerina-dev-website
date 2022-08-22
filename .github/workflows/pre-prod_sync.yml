@@ -72,8 +72,8 @@ jobs:
       - name: Merge the pr to gh2
         shell: bash
         run: |
-          git rebase gh-pages
-          git checkout gh-pages
+          # git rebase gh-pages
+          # git checkout gh-pages
           git merge deploy-website-$GITHUB_SHA --no-ff
           # git remote -v
           # git deploy-website-$GITHUB_SHA
