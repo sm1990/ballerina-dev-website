@@ -229,7 +229,11 @@ export default function UseCases(props) {
                             </Col>
                             <Col xs={12} md={7} lg={7} className={`${styles.box}`}>
 
+<<<<<<< HEAD
                                 <div id="code-container-1" className={`${styles["code-container"]} d-none d-lg-block`}>
+=======
+                                <div id="code-container-1" className={`${styles["code-container"]} ${styles.code1} d-none d-lg-block`}>
+>>>>>>> aa90ea31a0bb57e513cb4eeca46aa035bc96df4b
                                     <div id="left-panel-1" className={`${styles["left-panel"]}`}>
                                         <p className={`${styles["title-old"]}`}>{recordsJava.frontmatter.title}</p>
                                         <div className={`${styles["code-panel"]}`} dangerouslySetInnerHTML={{ __html: recordsJava.code }} />
@@ -309,7 +313,11 @@ export default function UseCases(props) {
                             </Col>
                             <Col xs={12} md={7} lg={7} className={`${styles.box}`}>
 
+<<<<<<< HEAD
                                 <div id="code-container-2" className={`${styles["code-container"]} d-none d-lg-block`}>
+=======
+                                <div id="code-container-2" className={`${styles["code-container"]} ${styles.code2} d-none d-lg-block`}>
+>>>>>>> aa90ea31a0bb57e513cb4eeca46aa035bc96df4b
                                     <div id="left-panel-2" className={`${styles["left-panel"]}`}>
                                         <p className={`${styles["title-old"]}`}>{unionsJava.frontmatter.title}</p>
                                         <div className={`${styles["code-panel"]}`} dangerouslySetInnerHTML={{ __html: unionsJava.code }} />
@@ -769,7 +777,11 @@ export default function UseCases(props) {
                             </Col>
                             <Col xs={12} md={7} lg={7} className={`${styles.box}`}>
 
+<<<<<<< HEAD
                                 <div id="code-container-9" className={`${styles["code-container"]} d-none d-lg-block`}>
+=======
+                                <div id="code-container-9" className={`${styles["code-container"]} ${styles.code7} d-none d-lg-block`}>
+>>>>>>> aa90ea31a0bb57e513cb4eeca46aa035bc96df4b
                                     <div id="left-panel-9" className={`${styles["left-panel"]}`}>
                                         <p className={`${styles["title-old"]}`}>{immutabilityJava.frontmatter.title}</p>
                                         <div className={`${styles["code-panel"]}`} dangerouslySetInnerHTML={{ __html: immutabilityJava.code }} />

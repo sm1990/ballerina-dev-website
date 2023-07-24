@@ -42,6 +42,7 @@ const TopNav = (props) => {
   const handleShow = () => setShow(true);
 
   const MenuItems = [
+<<<<<<< HEAD
     <Dropdown.Item contentType='usecases' href={`${prefix}/usecases/integration`} className={styles.dropDownItem} key='1'>Integration</Dropdown.Item>,
     <Dropdown.Item contentType='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-apollo-for-graphql/`} className={`${styles.dropDownItem}`} key='2'><span>Ballerina vs. Apollo for GraphQL</span></Dropdown.Item>,
     <Dropdown.Item contentType='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-java-for-data-oriented-programming/`} className={styles.dropDownItem} key='4'>Ballerina vs. Java for data oriented programming</Dropdown.Item>,
@@ -51,6 +52,14 @@ const TopNav = (props) => {
     <Dropdown.Item contentType='usecases' href={`${prefix}/usecases/microservices`} className={styles.dropDownItem} key='7'>Microservices</Dropdown.Item>,
     <Dropdown.Item contentType='usecases' href={`${prefix}/usecases/eda`} className={styles.dropDownItem} key='8'>EDA</Dropdown.Item>,
     <Dropdown.Item contentType='usecases' href={`${prefix}/usecases/b2b`} className={styles.dropDownItem} key='9'>B2B</Dropdown.Item>
+=======
+    <Dropdown.Item category='usecases' href={`${prefix}/usecases/integration`} className={styles.dropDownItem} key='1'>Integration</Dropdown.Item>,
+    <Dropdown.Item category='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-apollo-for-graphql/`} className={`${styles.dropDownItem}`} key='2'><span>Ballerina vs. Apollo for GraphQL</span></Dropdown.Item>,
+    <Dropdown.Item category='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-java-for-data-oriented-programming/`} className={styles.dropDownItem} key='4'>Ballerina vs. Java for data-oriented programming</Dropdown.Item>,
+    <Dropdown.Item category='usecases' href={`${prefix}/usecases/ai`} className={styles.dropDownItem} key='5'>AI</Dropdown.Item>,
+    <Dropdown.Item category='usecases' href={`${prefix}/usecases/healthcare`} className={styles.dropDownItem} key='6'>Healthcare</Dropdown.Item>,
+    <Dropdown.Item category='usecases' href={`${prefix}/usecases/data-oriented-programming`} className={`${styles.dropDownItem}`} key='3'><span>Data-oriented programming</span></Dropdown.Item>
+>>>>>>> aa90ea31a0bb57e513cb4eeca46aa035bc96df4b
   ];
 
 
