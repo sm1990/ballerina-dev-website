@@ -17,7 +17,7 @@
  */
 
 import * as React from 'react';
-import { Accordion, Container, Nav, Navbar, NavDropdown, Dropdown, Offcanvas } from 'react-bootstrap';
+import { Accordion, Container, Nav, Navbar, NavDropdown, Dropdown, Offcanvas, Row, Col } from 'react-bootstrap';
 import Image from 'next-image-export-optimizer';
 
 import Search from '../search/Search';
@@ -46,20 +46,27 @@ const TopNav = (props) => {
     <Dropdown.Item category='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-apollo-for-graphql/`} className={`${styles.dropDownItem}`} key='2'><span>Ballerina vs. Apollo for GraphQL</span></Dropdown.Item>,
     <Dropdown.Item category='comparisons' href={`${prefix}/usecases/integration/ballerina-vs-java-for-data-oriented-programming/`} className={styles.dropDownItem} key='4'>Ballerina vs. Java for data-oriented programming</Dropdown.Item>,
     <Dropdown.Item category='usecases' href={`${prefix}/usecases/ai`} className={styles.dropDownItem} key='5'>AI</Dropdown.Item>,
-    <Dropdown.Item category='usecases' href={`${prefix}/usecases/healthcare`} className={styles.dropDownItem} key='6'>Healthcare</Dropdown.Item>,
-    <Dropdown.Item category='usecases' href={`${prefix}/usecases/data-oriented-programming`} className={`${styles.dropDownItem}`} key='3'><span>Data-oriented programming</span></Dropdown.Item>,
-    <Dropdown.Item category='usecases' href={`${prefix}/usecases/eda`} className={styles.dropDownItem} key='7'>EDA</Dropdown.Item>,
-    <Dropdown.Item category='case studies' href={`${prefix}/case-studies/wso2`} className={styles.dropDownItem} key='11'>WSO2</Dropdown.Item>,
-    <Dropdown.Item category='case studies' href={`${prefix}/case-studies/fat-tuesday`} className={styles.dropDownItem} key='12'>FAT Tuesday</Dropdown.Item>,
-    <Dropdown.Item category='case studies' href={`${prefix}/case-studies/mosip`} className={styles.dropDownItem} key='13'>MOSIP</Dropdown.Item>,
-    <Dropdown.Item category='case studies' href={`${prefix}/case-studies/ballerina-central`} className={styles.dropDownItem} key='14'>Ballerina Central</Dropdown.Item>,
-    <Dropdown.Item category='case studies' href={`${prefix}/case-studies/redcross-elixir`} className={styles.dropDownItem} key='15'>Red Cross Elixir</Dropdown.Item>
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/healthcare`} className={styles.dropDownItem} key='6'>Healthcare</Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/data-oriented-programming`} className={`${styles.dropDownItem}`} key='3'><span>Data-oriented programming</span></Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/eda`} className={styles.dropDownItem} key='7'>EDA</Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/b2b`} className={styles.dropDownItem} key='8'>B2B</Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/etl`} className={styles.dropDownItem} key='12'>ETL</Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/microservices`} className={styles.dropDownItem} key='9'>Microservices</Dropdown.Item>,
+    // <Dropdown.Item category='usecases' href={`${prefix}/usecases/bff`} className={styles.dropDownItem} key='10'>BFF</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/wso2`} className={styles.dropDownItem} key='11'>WSO2</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/fat-tuesday`} className={styles.dropDownItem} key='12'>FAT Tuesday</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/mosip`} className={styles.dropDownItem} key='13'>MOSIP</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/qhana`} className={styles.dropDownItem} key='14'>QHAna</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/ballerina-central`} className={styles.dropDownItem} key='15'>Ballerina Central</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/redcross-elixir`} className={styles.dropDownItem} key='16'>Red Cross Elixir</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/raapid-ai`} className={styles.dropDownItem} key='17'>RAAPID.AI</Dropdown.Item>,
+    // <Dropdown.Item category='case studies' href={`${prefix}/case-studies/avinya-foundation`} className={styles.dropDownItem} key='18'>Avinya Academy</Dropdown.Item>
   ];
 
   const now = new Date();
   let showBanner = false;
 
-  if (now < Date.parse('2023-11-01T00:00:00.0000-00:00')) {
+  if (now < Date.parse('2024-05-10T00:00:00.0000-00:00')) {
     showBanner = true;
   }
 
@@ -68,10 +75,33 @@ const TopNav = (props) => {
     <>
       {
         (showBanner) ?
-          <div className={styles.hackathonBanner}>
+          <>
+
+            <section className={styles.conBanner}>
+              <Container>
+                <Row style={{ alignItems: "center" }}>
+                  <Col sm={12} md={4} lg={4} className={styles.conBannerLogo}>
+                    <a href="https://wso2.com/wso2con/2024/" id="cWSO2ConHomeLogoBtn" target="_blank" aria-label="" rel="noreferrer">
+                      <img src="https://wso2.cachefly.net/wso2/sites/all/wso2con/2024/wso2con2024-white.webp" width="194" height="19" alt="WSO2Con2024 Logo" className="ls-is-cached lazyloaded " loading="lazy" />
+                    </a>
+                  </Col>
+                  <Col sm={12} md={4} lg={4} className={styles.conBannerDate}>
+                    <h3>May 7-9 | Hollywood, FL, USA</h3>
+                  </Col>
+                  <Col sm={12} md={4} lg={4} className={styles.conBannerBtn}>
+                    <a href="https://wso2.com/wso2con/2024/" target="_blank" className={styles.cButtonN_Standard} id="cWSO2ConHomeNotifyBtn" aria-label="Register Now" rel="noreferrer">
+                      Register Now
+                    </a>
+                  </Col>
+                </Row>
+              </Container>
+            </section>
+
+            {/* <div className={styles.hackathonBanner}>
             Ballerina Hacktoberfest is happening now. <a href="https://ballerina.io/hacktoberfest/" target="_blank" rel="noreferrer">Join us</a>!
-          </div>
-        : null
+          </div> */}
+          </>
+          : null
       }
       <>
         <Navbar key={expand} expand={expand} className={(launcher === 'home') ? `${styles[launcher]} navbar-dark` : styles[launcher]} sticky='top'>
@@ -103,8 +133,26 @@ const TopNav = (props) => {
                       Explore
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu as={CustomMenu} style={{ minWidth: '700px', marginLeft: '-210px' }} className="dropdown-center" renderOnMount={true}>
-                      {MenuItems}
+                    <Dropdown.Menu style={{ minWidth: '700px', marginLeft: '-210px', padding: "0" }} className="dropdown-center" renderOnMount={true}>
+                      {/* {MenuItems} */}
+                      <div className={styles.subSections}>
+
+                            <div className={styles.subSection}>
+                                <a href="/usecases">Use cases</a>
+                                <p>Where Ballerina is specialised at</p>
+                            </div>
+
+                            <div className={styles.subSection} style={{marginRight:"20px"}}>
+                                <a href="/case-studies" style={{whiteSpace:"nowrap"}}>Case studies</a>
+                                <p>Success stories of users</p>
+                            </div>
+
+
+                            <div className={styles.subSection}>
+                                <a href="#">Comparisons</a>
+                                <p>Compare with common xxxx</p>
+                            </div>
+                        </div>
                     </Dropdown.Menu>
                   </Dropdown>
 
@@ -134,9 +182,32 @@ const TopNav = (props) => {
                       </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
-                      <Accordion as={CustomMenu} launcher='mobile' className={styles.mobileAccordion}>
-                        {MenuItems}
-                      </Accordion>
+                    <div className={styles.mobileNav}>
+                    <a href="/usecases">
+<div className={`${styles.subSection} ${styles.mobile}`}>
+    <a href="/usecases">Use cases</a>
+    <p>Where Ballerina is specialised at</p>
+</div>
+</a>
+
+<a href="/case-studies">
+<div className={`${styles.subSection} ${styles.mobile}`} style={{marginRight:"20px"}}>
+    <a href="/case-studies" style={{whiteSpace:"nowrap"}}>Case studies</a>
+    <p>Success stories of users</p>
+</div>
+</a>
+
+<a href="#"> 
+<div className={`${styles.subSection} ${styles.mobile}`}>
+    <a href="#">Comparisons</a>
+    <p>Compare with common xxxx</p>
+</div>
+</a>
+</div>
+                       
+                      {/* <Accordion as={CustomMenu} launcher='mobile' className={styles.mobileAccordion}> */}
+                        {/* {MenuItems} */}
+                      {/* </Accordion> */}
                     </Offcanvas.Body>
                   </Offcanvas>
 

@@ -23,7 +23,7 @@ import styles from './TopNav.module.css';
 
 const CustomMenu = React.forwardRef(
     ({ children, style, className, "aria-labelledby": labeledBy, launcher }, ref) => {
-        const [value, setValue] = useState("");
+        // const [value, setValue] = useState("");
 
         return (
             <div
@@ -35,7 +35,23 @@ const CustomMenu = React.forwardRef(
                 {
                     (launcher === 'mobile') ?
                         <>
-                            <Accordion.Item eventKey="usecases" className={styles.acItem}>
+                        hhhhhhhhhhh
+                        <div className={styles.subSection}>
+                                <a href="/usecases">Use cases</a>
+                                <p>Where Ballerina is specialised at</p>
+                            </div>
+
+                            <div className={styles.subSection} style={{marginRight:"20px"}}>
+                                <a href="/case-studies" style={{whiteSpace:"nowrap"}}>Case studies</a>
+                                <p>Success stories of users</p>
+                            </div>
+
+
+                            <div className={styles.subSection}>
+                                <a href="#">Comparisons</a>
+                                <p>Compare with common xxxx</p>
+                            </div>
+                            {/* <Accordion.Item eventKey="usecases" className={styles.acItem}>
                                 <Accordion.Header className={styles.mainDir}>Use cases</Accordion.Header>
                                 <Accordion.Body className={styles.accordionBody}>
                                     {
@@ -88,69 +104,25 @@ const CustomMenu = React.forwardRef(
                                         )
                                     }
                                 </Accordion.Body>
-                            </Accordion.Item>
+                            </Accordion.Item> */}
                         </>
                         :
                         <div className={styles.subSections}>
 
                             <div className={styles.subSection}>
-                                <p>Use cases</p>
-                                <ul className="list-unstyled">
-                                    {
-                                        React.Children.toArray(children).filter(
-                                            (child, index) => {
-                                                if (child.props.category.toLowerCase().startsWith('usecases')) {
-                                                    return (
-                                                        <li key={index}>
-                                                            {child}
-                                                        </li>
-                                                    )
-                                                }
-                                            }
-                                        )
-                                    }
-                                    <li><a className={styles.seeMore} href="/usecases">See more</a></li>
-                                </ul>
+                                <a href="/usecases">Use cases</a>
+                                <p>Where Ballerina is specialised at</p>
                             </div>
 
                             <div className={styles.subSection} style={{marginRight:"20px"}}>
-                                <p style={{whiteSpace:"nowrap"}}>Case studies</p>
-                                <ul className="list-unstyled">
-                                    {
-                                        React.Children.toArray(children).filter(
-                                            (child, index) => {
-                                                if (child.props.category.toLowerCase().startsWith('case studies')) {
-                                                    return (
-                                                        <li key={index}>
-                                                            {child}
-                                                        </li>
-                                                    )
-                                                }
-                                            }
-                                          )
-                                    }
-                                    <li><a className={styles.seeMore} href="/case-studies">See more</a></li>
-                                </ul>
+                                <a href="/case-studies" style={{whiteSpace:"nowrap"}}>Case studies</a>
+                                <p>Success stories of users</p>
                             </div>
 
 
                             <div className={styles.subSection}>
-                                <p>Comparisons</p>
-                                <ul className="list-unstyled">
-                                    {
-                                        React.Children.toArray(children).filter(
-                                            (child, index) => {
-                                                if (child.props.category.toLowerCase().startsWith('comparisons')) {
-                                                    return (
-                                                        <li key={index}>
-                                                            {child}
-                                                        </li>
-                                                    )
-                                                }
-                                            }
-                                        )
-                                    }
-                                </ul>
+                                <a href="#">Comparisons</a>
+                                <p>Compare with common xxxx</p>
                             </div>
                         </div>
                 }
