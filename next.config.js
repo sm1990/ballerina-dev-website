@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const meta = require("./_data/swanlake-latest/metadata.json");
+
 const redirectBase = process.env.NEXT_PUBLIC_BASE_PATH
   ? `${process.env.NEXT_PUBLIC_BASE_PATH}/`
   : "";
@@ -14,7 +16,6 @@ const securityHeaders = [
     value: "frame-ancestors 'none';"
   }
 ]
-
 
 const nextConfig = {
   reactStrictMode: true,
@@ -453,6 +454,30 @@ const nextConfig = {
         destination: `/learn/integration/integration-tutorials/:slug`,
       }
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/learn/quick-tour/',
+        destination: '/learn/',
+        permanent: true,
+      },
+      {
+        source: '/learn/tooling-guide/:slug',
+        destination: '/learn/',
+        permanent: true,
+      },
+      {
+        source: '/downloads/release-notes/',
+        destination: `/downloads/swan-lake-release-notes/swan-lake-${meta.version}`,
+        permanent: true,
+      },
+      {
+        source: '/downloads/swan-lake-release-notes/',
+        destination: `/downloads/swan-lake-release-notes/swan-lake-${meta.version}`,
+        permanent: true,
+      },
+    ]
   },
   trailingSlash: true,
   resolve: [{ path: false, fs: false }],
