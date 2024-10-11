@@ -49,7 +49,7 @@ greeter/
 └── main.bal
 ```
 
-- The `Ballerina.toml` file contains metadata, which describes your package. Also, the `bal` tool uses the `Ballerina.toml` file to identify the root of a package.
+- The `Ballerina.toml` file contains metadata, which describes your packagexv. Also, the `bal` tool uses the `Ballerina.toml` file to identify the root of a package.
 - The `main.bal` file is a source file and it contains the Ballerina code that prints `Hello, World!` to the console. You can add any number of source files into the `greeter` directory.
 
 ## Say `Hello, World!`
