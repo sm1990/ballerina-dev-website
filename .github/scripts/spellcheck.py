@@ -5,7 +5,7 @@ from spellchecker import SpellChecker
 spell = SpellChecker()
 
 # Directory to scan for files (in this case, _data)
-directory = "_data"
+directory = "swan-lake"
 
 # File extensions to check
 file_extensions = ['.txt', '.md', '.html', '.js', '.py']  # Add or modify based on your needs
