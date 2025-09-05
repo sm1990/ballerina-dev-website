@@ -959,7 +959,11 @@ ul.eventsTabs {
   font-weight: 300;
 }
 
-.stdLib ul {
+/* .stdLib ul {
+  list-style: none;
+} */
+
+.stdLib #contents + ol ul li {
   list-style: none;
 }
 
@@ -994,6 +998,10 @@ ul.eventsTabs {
 .stdlib td {
   border: 1px solid #cecfd0;
 }
+/* 
+.stdLib blockquote ul {
+  list-style: disc;
+} */
 
 .mdContentSpec a {
   text-decoration: none;
