@@ -263,7 +263,7 @@ export function LogFileRotation({ codeSnippets }) {
       <h2>How rotation works</h2>
 
       <p>
-        When a log file rotates, it’s renamed with a timestamp suffix and a new
+        When a log file rotates, it's renamed with a timestamp suffix and a new
         file is created:
       </p>
 
@@ -369,54 +369,59 @@ export function LogFileRotation({ codeSnippets }) {
 
       <p>Rotation policies support these configuration parameters:</p>
 
-      <div class="mdTable">
+      <div style={{ marginLeft: "0px" }}>
         <table>
           <thead>
             <tr>
-              <th>Parameter</th>
-              <th>Default</th>
-              <th>Description</th>
+              <th style="text-align:center">Parameter</th>
+              <th style="text-align:center">Default</th>
+              <th style="text-align:center">Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td style="text-align:center">
                 <code>policy</code>
               </td>
-              <td>
+              <td style="text-align:center">
                 <code>&quot;BOTH&quot;</code>
               </td>
-              <td>
+              <td style="text-align:center">
                 Rotation trigger: <code>&quot;SIZE_BASED&quot;</code>,{" "}
                 <code>&quot;TIME_BASED&quot;</code>, or{" "}
                 <code>&quot;BOTH&quot;</code>
               </td>
             </tr>
             <tr>
-              <td>
+              <td style="text-align:center">
                 <code>maxFileSize</code>
               </td>
-              <td>10485760</td>
-              <td>Maximum file size in bytes (10MB default)</td>
+              <td style="text-align:center">10485760</td>
+              <td style="text-align:center">
+                Maximum file size in bytes (10MB default)
+              </td>
             </tr>
             <tr>
-              <td>
+              <td style="text-align:center">
                 <code>maxAge</code>
               </td>
-              <td>86400</td>
-              <td>Maximum file age in seconds (24 hours default)</td>
+              <td style="text-align:center">86400</td>
+              <td style="text-align:center">
+                Maximum file age in seconds (24 hours default)
+              </td>
             </tr>
             <tr>
-              <td>
+              <td style="text-align:center">
                 <code>maxBackupFiles</code>
               </td>
-              <td>10</td>
-              <td>Number of rotated backup files to retain</td>
+              <td style="text-align:center">10</td>
+              <td style="text-align:center">
+                Number of rotated backup files to retain
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-
       <blockquote>
         <p>
           <strong>Note:</strong> This example uses a small threshold (5 seconds)
