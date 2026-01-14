@@ -17,12 +17,7 @@
  */
 
 // imports
-const md = require("markdown-it")({ 
-  xhtmlOut: true,
-  html: true,
-  linkify: true,
-  typographer: true
-});
+const md = require("markdown-it")({ xhtmlOut: true });
 const container = require("markdown-it-container");
 const fs = require("fs");
 const axios = require("axios");
@@ -135,10 +130,8 @@ const sleep = (timeout) => {
 
 // render code snippet
 const codeSnippetGenerator = (code, marginLeftMultiplier, lang) => {
-  const lines = code.split('\n');
-  const formattedCode = lines.map(line => line.replace(/</g, '&lt;').replace(/>/g, '&gt;')).join('\n');
   let output = `<pre style={{ marginLeft: "${marginLeftMultiplier * 8}px" }} 
-    className="p-3 rounded ${lang}"><code>${formattedCode}</code></pre>`;
+    className="p-3 rounded ${lang}"><code>${code}</code></pre>`;
 
   return output;
 };
@@ -332,32 +325,6 @@ md.use(container, "out", {
     }
   },
 });
-
-// Custom table renderer to wrap tables in a div for proper styling
-const defaultTableOpenRenderer = md.renderer.rules.table_open || function(tokens, idx, options, env, self) {
-  return self.renderToken(tokens, idx, options);
-};
-
-const defaultTableCloseRenderer = md.renderer.rules.table_close || function(tokens, idx, options, env, self) {
-  return self.renderToken(tokens, idx, options);
-};
-
-md.renderer.rules.table_open = function(tokens, idx, options, env, self) {
-  return '<div class="mdTable">' + defaultTableOpenRenderer(tokens, idx, options, env, self);
-};
-
-md.renderer.rules.table_close = function(tokens, idx, options, env, self) {
-  return defaultTableCloseRenderer(tokens, idx, options, env, self) + '</div>';
-};
-
-// Remove inline styles from table cells
-md.renderer.rules.td_open = function(tokens, idx, options, env, self) {
-  return '<td>';
-};
-
-md.renderer.rules.th_open = function(tokens, idx, options, env, self) {
-  return '<th>';
-};
 
 // find previous/next bbes
 const findPrevNextBBEs = (bbeName, jsonContent) => {
@@ -618,7 +585,7 @@ const generate = async (examplesDir, outputDir) => {
             editOnGithubLink = `${editOnGithubBaseUrl}/${url}`;
           }
         } catch (err) {
-          // Silently skip - example may not exist on GitHub yet
+          console.error(err)
         }
 
         indexArray.push(url);
@@ -666,11 +633,12 @@ const generate = async (examplesDir, outputDir) => {
                 codeSnippetMarginLeftMultiplier = 0,
                 codeSnippetLang,
                 codeSnippetArray = [],
-                listRegex = /^(\s*)(\d+|-)(?:\.?)+\s*(.*)/,
-                tableRegex = /^\s*\|.*\|.*$/,
-                tableFound = false,
-                tableArray = [],
+                listRegex = /^(\s*)(\d+|-)(?:\.?)+\s*(.*)/;
                 relatedLinks = false;
+
+              let tableFound = false,
+                tableArray = [],
+                tableMarginLeftMultiplier = 0;
 
               for (const line of contentArray) {
                 let convertedLine;
@@ -678,7 +646,7 @@ const generate = async (examplesDir, outputDir) => {
                   if (/^\w/.test(line)) description = line;
                 }
 
-                if (!codeSnippetFound) {
+                if (!codeSnippetFound && !tableFound) {
                   // ballerina content
 
                   let isIndent = false;
@@ -691,19 +659,13 @@ const generate = async (examplesDir, outputDir) => {
                     relatedLinks = true;
                   }
 
-                  // Check if this line is part of a table
-                  if (tableRegex.test(line)) {
-                    if (!tableFound) {
-                      tableFound = true;
-                      tableArray = [];
-                    }
-                    tableArray.push(line);
-                    continue; // Skip to next line to accumulate table rows
-                  } else if (tableFound) {
-                    tableFound = false;
-                    convertedLine = md.render(tableArray.join("\n"));
-                    updatedArray.push(convertedLine);
-                    tableArray = [];
+                  // Detect table start (line with pipes)
+                  if (line.match(/^\s*\|.*\|/) && !tableFound) {
+                    tableFound = true;
+                    tableArray = [line];
+                    const match = line.match(/^(\s*)\|/);
+                    tableMarginLeftMultiplier = match ? match[1].length : 0;
+                    continue;
                   }
 
                   if (line.includes("::: code")) {
@@ -775,6 +737,7 @@ const generate = async (examplesDir, outputDir) => {
                       codeSnippetMarginLeftMultiplier,
                       codeSnippetLang
                     );
+                    codeSnippetArray = [];
                   } else {
                     codeSnippetArray.push(
                       line.slice(codeSnippetMarginLeftMultiplier)
@@ -782,14 +745,43 @@ const generate = async (examplesDir, outputDir) => {
                   }
                 }
 
-                if (!codeSnippetFound) {
+                // Handle table accumulation
+                if (tableFound) {
+                  // Continue accumulating table lines
+                  if (line.match(/^\s*\|.*\|/) || line.match(/^\s*[-|:\s]+$/)) {
+                    tableArray.push(line);
+                  } else {
+                    // Table ended, render it
+                    tableFound = false;
+                    const tableContent = tableArray.map(l => 
+                      l.slice(tableMarginLeftMultiplier)
+                    ).join('\n');
+                    const renderedTable = md.render(tableContent);
+                    convertedLine = `<div style={{ marginLeft: "${tableMarginLeftMultiplier * 8}px" }}>${renderedTable}</div>`;
+                    updatedArray.push(convertedLine);
+                    tableArray = [];
+                    
+                    // Process current line if it's not empty
+                    if (line.trim() !== '') {
+                      convertedLine = escapeParagraphCharacters(md.render(line));
+                      updatedArray.push(convertedLine);
+                    }
+                    continue;
+                  }
+                }
+
+                if (!codeSnippetFound && !tableFound) {
                   updatedArray.push(convertedLine);
                 }
               }
 
-              // Handle tables at the end of the file
+              // Handle table at end of content
               if (tableFound && tableArray.length > 0) {
-                const convertedLine = md.render(tableArray.join("\n"));
+                const tableContent = tableArray.map(l => 
+                  l.slice(tableMarginLeftMultiplier)
+                ).join('\n');
+                const renderedTable = md.render(tableContent);
+                const convertedLine = `<div style={{ marginLeft: "${tableMarginLeftMultiplier * 8}px" }}>${renderedTable}</div>`;
                 updatedArray.push(convertedLine);
               }
 
