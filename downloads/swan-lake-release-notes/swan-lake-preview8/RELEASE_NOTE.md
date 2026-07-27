@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Preview 8
-permalink: /downloads/swan-lake-release-notes/swan-lake-preview8/
-active: swan-lake-preview8
+description: Swan Lake Preview 8 - Release note
+slug: /swan-lake-release-notes/swan-lake-preview8
 ---
 
 ### Overview of Ballerina Swan Lake Preview 8 
@@ -33,7 +32,7 @@ You can use the update tool to update to Ballerina Swan Lake Preview 8 as follow
 
 ##### For existing users
 
-If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
                         
 > `ballerina update`
 
@@ -217,9 +216,9 @@ l.attach(hello, basePath);
 ##### Listener object 
 
 Listener is no longer defined in `ballerina/lang.object` lang-library, now it is a compiler known internal type.
-A type is a listener object type if it is a subtype of the object type Listener<T,A>, for some type `T` that is a subtype of `service object {}` and some type `A` that is a subtype of `string[]|string|()`.
+A type is a listener object type if it is a subtype of the object type `Listener&lt;T,A&gt;`, for some type `T` that is a subtype of ``service object {}`` and some type `A` that is a subtype of `string[]|string|()`.
 
-The `object type Listener<T,A>`, is described by the following object type descriptor:
+The `object type `Listener&lt;T,A&gt;``, is described by the following object type descriptor:
 
 ```ballerina
 object {

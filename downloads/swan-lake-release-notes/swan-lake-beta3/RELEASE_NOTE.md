@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Beta3
-permalink: /downloads/swan-lake-release-notes/swan-lake-beta3/
-active: swan-lake-beta3
+description: Swan Lake Beta3 - Release note
+slug: /swan-lake-release-notes/swan-lake-beta3
 ---
+
 ## Overview of Ballerina Swan Lake Beta3
 
 <em>This is the third beta release leading up to the Ballerina Swan Lake GA release.</em> 
@@ -12,19 +12,19 @@ It introduces the new language features planned for the Swan Lake GA release and
 
 ## Updating Ballerina
 
-If you are already using Ballerina, you can use the [update tool](/learn/update-tool/) to directly update to Ballerina Swan Lake Beta3 as follows. 
+If you are already using Ballerina, you can use the [update tool](https://ballerina.io/learn/update-tool/) to directly update to Ballerina Swan Lake Beta3 as follows. 
 
 To do this, first, execute the command below to get the update tool updated to its latest version. 
 
 > `bal update`
 
-If you are using an **update tool version below 0.8.14**, execute the `ballerina update` command to update it. Next, execute the command below to update to Swan Lake <VERSION>.
+If you are using an **update tool version below 0.8.14**, execute the `ballerina update` command to update it. Next, execute the command below to update to Swan Lake &lt;VERSION&gt;.
 
 > `bal dist pull slbeta3`
 
 ## Installing Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ## Language updates
 
@@ -576,7 +576,7 @@ To view bug fixes, see the [GitHub milestone for Swan Lake Beta3](https://github
 #### `sql` package
 - Added support for the `queryRow()` in the database connectors. This method allows retrieving a single row as a record or a single value from the database.
     ```ballerina
-    record{} queryResult = sqlClient->queryRow(`SELECT * FROM ExTable where row_id = 1`);
+    `record{}` queryResult = sqlClient->queryRow(`SELECT * FROM ExTable where row_id = 1`);
     int count = sqlClient->queryRow(`SELECT COUNT(*) FROM ExTable`);
     ```
 
@@ -628,7 +628,7 @@ Moved the `maxQueryDepth` validation from compile-time to runtime
 #### `sql` package
 - Improved the throughput performance with asynchronous database queries
 - Introduced new array out parameter types in call procedures
-- Changed the return type of the SQL query API to include the completion type as nil in the stream. The SQL query code below demonstrates this change</li>
+- Changed the return type of the SQL query API to include the completion type as nil in the stream. The SQL query code below demonstrates this change
     
     **Previous syntax:**
     ```ballerina
@@ -766,5 +766,4 @@ To view bug fixes, see the GitHub milestone for Swan Lake Beta3 of the repositor
 - [Language Server](https://github.com/ballerina-platform/ballerina-lang/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22Ballerina+Swan+Lake+-+Beta3%22+label%3AType%2FBug+label%3ATeam%2FLanguageServer)
 - [OpenAPI](https://github.com/ballerina-platform/ballerina-openapi/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22Ballerina+Swan+Lake+-+Beta3%22+label%3AType%2FBug)
 - [Debugger](https://github.com/ballerina-platform/ballerina-lang/issues?q=is%3Aissue+label%3AType%2FBug+label%3AArea%2FDebugger+milestone%3A%22Ballerina+Swan+Lake+-+Beta3%22+is%3Aclosed)
-
 

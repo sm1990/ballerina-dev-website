@@ -1,0 +1,4 @@
+$ bal run logger_from_config.bal
+
+time=2026-01-05T21:22:17.128+05:30 level=INFO module="" message="Application started" version="1.2.0" env="prod" nodeId="server-001"
+time=2026-01-05T21:22:17.188+05:30 level=INFO module="" message="Application processing completed" env="prod" nodeId="server-001"

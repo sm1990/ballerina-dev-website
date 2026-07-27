@@ -1,14 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Update 11 (2201.11.0)
-permalink: /downloads/swan-lake-release-notes/2201.11.0/
-active: 2201.11.0
-redirect_from:
-    - /downloads/swan-lake-release-notes/2201.11.0
-    - /downloads/swan-lake-release-notes/2201.11.0-swan-lake/
-    - /downloads/swan-lake-release-notes/2201.11.0-swan-lake
-    - /downloads/swan-lake-release-notes/
-    - /downloads/swan-lake-release-notes
+description: Swan Lake Update 11 (2201.11.0) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.11.0
 ---
 
 ## Overview of Ballerina Swan Lake Update 11 (2201.11.0)
@@ -17,14 +10,14 @@ redirect_from:
 
 ## Update Ballerina
 
-Update your current Ballerina installation directly to 2201.11.0 using the [Ballerina Update Tool](/learn/update-tool/) as follows.
+Update your current Ballerina installation directly to 2201.11.0 using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/) as follows.
 
 1. Run `bal update` to get the latest version of the Update Tool.
 2. Run `bal dist update` to update to this latest distribution.
 
 ## Install Ballerina
 
-If you have not installed Ballerina, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, download the [installers](/downloads/) to install.
 
 ## Language updates
 
@@ -37,7 +30,7 @@ The XML step expression now supports step extensions, including method invocatio
 ```ballerina
 public function main() {
     xml x = xml
-    `<item><!--comment--><name>T-shirt</name><price>19.99</price><brand><name>nike</name></brand></item>
+    `<item><name>T-shirt</name><price>19.99</price><brand><name>nike</name></brand></item>
       <item><?data?><name>Backpack</name><price>34.99</price><brand><name>adidas</name></brand></item>`;
 
     // Evaluates to `<name>nike</name><name>adidas</name>`
@@ -49,7 +42,7 @@ public function main() {
     // Evaluates to `<price>19.99</price><price>34.99</price>`
     xml x3 = x/*.<price>;
 
-    // Evaluates to `<!--comment--><?data?>`
+    // Evaluates to `<?data?>`
     xml x4 = x/*[0].filter(y => y is xml:Comment || y is xml:ProcessingInstruction);
 }
 ```

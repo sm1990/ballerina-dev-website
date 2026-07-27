@@ -1,0 +1,143 @@
+.hero {
+  padding: 4rem 0 3rem;
+  background:
+    radial-gradient(circle at top left, rgba(82, 195, 194, 0.18), transparent 34%),
+    linear-gradient(180deg, var(--ifm-color-emphasis-100), transparent);
+}
+
+.heroInner {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.heroCopy {
+  max-width: 34rem;
+}
+
+.heroTitle {
+  margin-bottom: 1rem;
+  font-size: clamp(2.6rem, 6vw, 4.3rem);
+  line-height: 1;
+}
+
+.heroText {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.heroActions {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.heroGallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.heroSlide {
+  width: 100%;
+  border-radius: 1.2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  box-shadow: 0 22px 45px rgba(18, 28, 45, 0.08);
+}
+
+.featureSection {
+  padding: 4rem 0;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.featureInner {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+.featureSectionReverse .featureInner {
+  direction: rtl;
+}
+
+.featureSectionReverse .featureText,
+.featureSectionReverse .imagePanel {
+  direction: ltr;
+}
+
+.featureTitle {
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  margin: 0;
+  max-width: 36rem;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.featureLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.featureLink {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.featureLink:hover {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+.imagePanel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.imageCard {
+  margin: 0;
+  padding: 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  background: var(--ifm-background-color);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.imageLabel {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (min-width: 997px) {
+  .heroInner,
+  .featureInner {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .heroGallery,
+  .imagePanel {
+    grid-template-columns: 1fr;
+  }
+}

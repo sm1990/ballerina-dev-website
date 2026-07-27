@@ -1,0 +1,8 @@
+{
+  "title": "CODEOWNERS",
+  "description": "",
+  "slug": "/CODEOWNERS",
+  "keywords": [],
+  "html": "<h1 id=\"lines-starting-with-are-comments\">Lines starting with ‘#’ are comments.</h1>\n<h1 id=\"each-line-is-a-file-pattern-followed-by-one-or-more-owners\">Each line is a file pattern followed by one or more owners.</h1>\n<h1 id=\"these-owners-will-be-the-default-owners-for-everything-in-the-repo\">These owners will be the default owners for everything in the repo.</h1>\n<ul>\n<li>\n<pre><code>  @praneesha \n</code></pre>\n</li>\n<li>\n<pre><code>  @Samallama \n</code></pre>\n</li>\n<li>\n<pre><code>  @lafernando\n</code></pre>\n</li>\n</ul>\n<h1 id=\"order-is-important-the-last-matching-pattern-has-the-most-precedence\">Order is important. The last matching pattern has the most precedence.</h1>\n<h1 id=\"so-if-a-pull-request-only-touches-javascript-files-only-these-owners\">So if a pull request only touches javascript files, only these owners</h1>\n<h1 id=\"will-be-requested-to-review\">will be requested to review.</h1>\n<p>*.md    @praneesha @github/md\n*.html  @praneesha @github/html\n<em>learn/</em>    @praneesha\n<em>swan-lake/</em>    @praneesha\n<em>1.1/</em>    @praneesha\n<em>1.0/</em>    @praneesha\n<em>0.990/</em>    @praneesha\n<em>community/</em>    @Samallama</p>\n<h1 id=\"you-can-also-use-email-addresses-if-you-prefer\">You can also use email addresses if you prefer.</h1>\n",
+  "toc": []
+}

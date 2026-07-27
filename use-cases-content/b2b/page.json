@@ -1,0 +1,46 @@
+{
+  "title": "Ballerina for B2B integrations",
+  "slug": "b2b",
+  "description": "Ballerina is the only language with native support for B2B integrations.",
+  "hero": {
+    "eyebrow": "Ballerina is the only language with native support for B2B integrations.",
+    "body": "It enables a seamless exchange of business data with partner networks using standard formats like X12, EDIFACT, or even custom EDI formats. Ballerina's powerful EDI data mapping and processing capabilities facilitate interoperability among data formats and simplify the use of EDI data within business apps.",
+    "image": "/images/edi-intro.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-is-edi"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "edi-business-apps"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "edi-transform"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-is-x12"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-is-edifact"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "spec-deviations"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "custom-edi"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "apis-are-new-dll"
+    }
+  ]
+}

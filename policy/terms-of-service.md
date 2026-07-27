@@ -3,12 +3,19 @@ layout: ballerina-inner-page
 title: Terms of service
 permalink: /terms-of-service/
 description: The Terms of Service outline the rules and guidelines for using Ballerina's services. Ensure you're informed about your rights and obligations.
-keywords: ballerinalang, integration, microservices, programming language, cloud native, ballerina language, terms of service
+keywords:
+  - ballerinalang
+  - integration
+  - microservices
+  - programming language
+  - cloud native
+  - ballerina language
+  - terms of service
 ---
 
 ## Overview
 
-The following Terms of Use (“Terms”) govern your access to and use of the <a target="_blank" href="https://ballerina.io/">Ballerina website</a> and any other site to which a link to these terms may appear (“Sites”). These Terms are a legal agreement between you and WSO2. Your registration for, or use of the Sites and any software, repositories, other services, or projects hosted on the Sites (“Services”) shall be deemed to be your acceptance of these Terms. These Terms do not govern your access and use of the Ballerina programming language or related commercial support and services offerings, which may be made available to you under separate license terms.
+The following Terms of Use (“Terms”) govern your access to and use of the [Ballerina website](https://ballerina.io/) and any other site to which a link to these terms may appear (“Sites”). These Terms are a legal agreement between you and WSO2. Your registration for, or use of the Sites and any software, repositories, other services, or projects hosted on the Sites (“Services”) shall be deemed to be your acceptance of these Terms. These Terms do not govern your access and use of the Ballerina programming language or related commercial support and services offerings, which may be made available to you under separate license terms.
 
 If you are agreeing to these Terms on behalf of a company or other legal entity, you represent that you have the authority to, and do hereby bind such entity to these Terms. You may not use the Ballerina Sites or Services if you are a person barred from using the Sites or Services under the laws of the United States or other countries, including the country in which you are resident or from which you use the Sites, or international laws or treaties. You may not use the Ballerina Sites or Services if you are or represent an entity that is listed on any U.S. Government Denied Party/Person List. You affirm that you are over the age of 13 as the Service is not intended for children under 13. IF YOU ARE 13 OR OLDER BUT UNDER THE AGE OF 18, OR THE LEGAL AGE OF MAJORITY WHERE YOU RESIDE IF THAT JURISDICTION HAS AN OLDER AGE OF MAJORITY, THEN YOU AGREE TO REVIEW THE TERMS WITH YOUR PARENT OR GUARDIAN TO MAKE SURE THAT BOTH YOU AND YOUR PARENT OR GUARDIAN UNDERSTAND AND AGREE TO THESE TERMS. YOU AGREE TO HAVE YOUR PARENT OR GUARDIAN REVIEW AND ACCEPT THESE TERMS ON YOUR BEHALF. IF YOU ARE A PARENT OR GUARDIAN AGREEING TO THE TERMS FOR THE BENEFIT OF A CHILD OVER 13, THEN YOU AGREE TO AND ACCEPT FULL RESPONSIBILITY FOR THAT CHILD'S USE OF THE SERVICE, INCLUDING ALL FINANCIAL CHARGES AND LEGAL LIABILITY THAT HE OR SHE MAY INCUR.
 

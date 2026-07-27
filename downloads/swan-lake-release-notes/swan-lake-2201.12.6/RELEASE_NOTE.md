@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: Swan Lake Update 12 (2201.12.6) 
-permalink: /downloads/swan-lake-release-notes/2201.12.6/
-active: 2201.12.6
+title: Swan Lake Update 12 (2201.12.6)
+description: Swan Lake Update 12 (2201.12.6) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.12.6
 ---
 
 ## Overview of Ballerina Swan Lake Update 12 (2201.12.6)
@@ -11,7 +10,7 @@ active: 2201.12.6
 
 ## Update Ballerina
 
-Run the command below to update your current Ballerina installation directly to 2201.12.6 by using the [Ballerina Update Tool](/learn/update-tool/).
+Run the command below to update your current Ballerina installation directly to 2201.12.6 by using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/).
 
 ```
 $ bal dist pull 2201.12.6
@@ -19,9 +18,9 @@ $ bal dist pull 2201.12.6
 
 ## Install Ballerina
 
-If you have not installed Ballerina, then, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then, download the [installers](/downloads/) to install.
 
-<!-- ADD ONLY THE APPLICABLE SECTIONS FROM THE BELOW -->
+
 
 
 ## Developer tools updates

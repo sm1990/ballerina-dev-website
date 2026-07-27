@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Preview 1
-permalink: /downloads/swan-lake-release-notes/swan-lake-preview1/
-active: swan-lake-preview1
+description: Swan Lake Preview 1 - Release note
+slug: /swan-lake-release-notes/swan-lake-preview1
 ---
+
 ### Overview of Ballerina Swan Lake - Preview 1
 Ballerina Swan Lake will be a major new version of Ballerina that we plan to release in January 2021. We will be doing major releases every 6 months from then on. We also plan to use popular ballet names as the codename for each release - so the 2021-07 release will be the Nutcracker release. We will announce details on maintenance of released versions and will also have an LTS release model similar to Ubuntu or Java.
 
@@ -13,7 +13,7 @@ You can use the update tool to update to Ballerina Swan Lake Preview 1 as follow
 
 **For existing users:**
 
-If you are already using jBallerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using jBallerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
                         
 > `ballerina update`
 

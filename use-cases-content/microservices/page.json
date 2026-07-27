@@ -1,0 +1,120 @@
+{
+  "title": "Ballerina for microservices",
+  "slug": "microservices",
+  "description": "The ultimate toolset for seamless microservices development.",
+  "hero": {
+    "eyebrow": "With its visionary design and cutting-edge features, Ballerina empowers developers to create robust, scalable, and easily maintainable microservices architectures.",
+    "body": "The Ballerina programming language effortlessly facilitates the construction and seamless deployment of microservices, making the process remarkably straightforward for developers.",
+    "image": "/images/msa-intro.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeImageSplit",
+      "source": "purposefully-built"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "data-persistence",
+      "links": [
+        {
+          "label": "Learn how to manage data persistence using bal persist",
+          "href": "https://ballerina.io/learn/manage-data-persistence-with-bal-persist/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "natively-concurrent",
+      "links": [
+        {
+          "label": "View on Ballerina Central",
+          "href": "https://central.ballerina.io/ballerina/lang.concurrent/latest"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "type-safe"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "designed-for-failure",
+      "links": [
+        {
+          "label": "Learn about the service resiliency",
+          "href": "https://ballerina.io/learn/service-resiliency/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "test-framework",
+      "links": [
+        {
+          "label": "Learn how to use Ballerina test framework",
+          "href": "https://ballerina.io/learn/test-ballerina-code/test-a-simple-function/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "network-awareness"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "integration-capabilities",
+      "links": [
+        {
+          "label": "Learn how to consume messages with Kafka",
+          "href": "https://ballerina.io/learn/by-example/kafka-service-consume-message/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "http2-native",
+      "links": [
+        {
+          "label": "View on Ballerina Central",
+          "href": "https://central.ballerina.io/ballerina/http/latest"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-with-graalvm",
+      "links": [
+        {
+          "label": "Learn how to build a native executable",
+          "href": "/learn/graalvm-executable-overview/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "bottom-up-top-down",
+      "links": [
+        {
+          "label": "Go to the documentation of Architecture View",
+          "href": "/learn/vs-code-extension/implement-the-code/ballerina-visualizer-view/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "devops-agility"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "msa-tracing",
+      "links": [
+        {
+          "label": "Learn how to observe Ballerina programs",
+          "href": "/learn/overview-of-ballerina-observability/"
+        }
+      ]
+    }
+  ]
+}

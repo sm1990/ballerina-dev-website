@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.intro {
+  margin: 0;
+  max-width: 60rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.groupTitle {
+  margin: 0;
+}
+
+.sectionGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.cardTitle {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.link {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}

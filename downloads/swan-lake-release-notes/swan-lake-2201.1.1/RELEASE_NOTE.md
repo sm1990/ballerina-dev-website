@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: 2201.1.1 (Swan Lake Update 1) 
-permalink: /downloads/swan-lake-release-notes/2201.1.1/
-active: 2201-1-1
+title: 2201.1.1 (Swan Lake Update 1)
+description: 2201.1.1 (Swan Lake Update 1) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.1.1
 ---
 
 ## Overview of Ballerina Swan Lake 2201.1.1
@@ -11,7 +10,7 @@ active: 2201-1-1
 
 ## Update Ballerina
 
-**If you are already using Ballerina 2201.0.0 (Swan Lake)**, run either of the commands below to directly update to 2201.1.1 using the [Ballerina Update Tool](/learn/update-tool/).
+**If you are already using Ballerina 2201.0.0 (Swan Lake)**, run either of the commands below to directly update to 2201.1.1 using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/).
 
 `bal dist update` (or `bal dist pull 2201.1.1`)
 
@@ -25,7 +24,7 @@ However, if you are using a version below 2201.0.0 (Swan Lake) and if you alread
 
 ## Install Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ## Language updates
 
@@ -70,4 +69,4 @@ To view bug fixes, see the GitHub milestone for 2201.1.1 (Swan Lake) of the repo
 - [Debugger](https://github.com/ballerina-platform/ballerina-lang/issues?q=is%3Aissue+milestone%3A%22Ballerina+2201.1.1%22+label%3AArea%2FDebugger+is%3Aclosed)
 - [OpenAPI](https://github.com/ballerina-platform/openapi-tools/milestone/17?closed=1)
 
-<!-- <style>.cGitButtonContainer, .cBallerinaTocContainer {display:none;}</style> -->
+

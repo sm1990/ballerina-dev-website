@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: Swan Lake Update 8 (2201.8.4) 
-permalink: /downloads/swan-lake-release-notes/2201.8.4/
-active: 2201.8.4
+title: Swan Lake Update 8 (2201.8.4)
+description: Swan Lake Update 8 (2201.8.4) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.8.4
 ---
 
 ## Overview of Ballerina Swan Lake Update 8 (2201.8.4)
@@ -11,7 +10,7 @@ active: 2201.8.4
 
 ## Update Ballerina
 
-Run the command below to update your current Ballerina installation directly to 2201.8.4 by using the [Ballerina Update Tool](/learn/update-tool/) as follows.
+Run the command below to update your current Ballerina installation directly to 2201.8.4 by using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/) as follows.
 
 ```
 $ bal dist pull 2201.8.4
@@ -19,7 +18,7 @@ $ bal dist pull 2201.8.4
 
 ## Install Ballerina
 
-If you have not installed Ballerina, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, download the [installers](/downloads/) to install.
 
 ## Runtime updates
 

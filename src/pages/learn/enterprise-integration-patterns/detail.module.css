@@ -1,0 +1,71 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.backLink {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.infoTable {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+}
+
+.row + .row {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.label,
+.value {
+  padding: 1rem 1.25rem;
+}
+
+.label {
+  font-weight: 700;
+  background: color-mix(in srgb, var(--ifm-color-emphasis-100) 65%, var(--ifm-background-surface-color));
+}
+
+.value :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

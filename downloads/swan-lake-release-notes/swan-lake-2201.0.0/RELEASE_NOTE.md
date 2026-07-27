@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: 2201.0.0 (Swan Lake) 
-permalink: /downloads/swan-lake-release-notes/2201-0-0/
-active: 2201-0-0
+title: 2201.0.0 (Swan Lake)
+description: 2201.0.0 (Swan Lake) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.0.0
 ---
 
 ### Overview of Ballerina 2201.0.0 (Swan Lake)
@@ -13,7 +12,7 @@ active: 2201-0-0
 
 >**Info:** The version format has been revised. `2201.0.0 (Swan Lake)` represents the format of `$YYMM.$UPDATE.$PATCH ($CODE_NAME)`. For further information, see [Ballerina Swan Lake is on the Horizon](https://blog.ballerina.io/posts/2021-12-14-ballerina-swan-lake-is-on-the-horizon/).
 
-If you are already using Ballerina, use the [Ballerina update tool](/learn/update-tool/#using-the-update-tool) to directly update to 2201.0.0 (Swan Lake). To do this: 
+If you are already using Ballerina, use the [Ballerina update tool](/learn/update-tool/#use-the-update-tool) to directly update to 2201.0.0 (Swan Lake). To do this: 
 
 1. Run the command below to get the latest version of the update tool.
 
@@ -52,7 +51,7 @@ If you already ran the `bal dist update` (or `bal dist pull 2201.0.0`) before th
 
 ### Installing Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ### Migrating from Swan Lake Beta Releases
 >**Info:** If you have been using Swan Lake Beta releases, delete the `Dependencies.toml` files in your Ballerina packages when migrating to Balelrina 2201.0.0 (Swan Lake). 
@@ -396,4 +395,4 @@ To view bug fixes, see the GitHub milestone for 2201.0.0 (Swan Lake) of the repo
 - [update tool](https://github.com/ballerina-platform/ballerina-update-tool/issues?q=is%3Aissue+milestone%3A%22Ballerina+2201.0.0%22+is%3Aclosed+label%3AType%2FBug)
 - [OpenAPI](https://github.com/ballerina-platform/openapi-tools/issues?q=is%3Aissue+label%3AType%2FBug+milestone%3A%22Ballerina+2201.0.0%22+is%3Aclosed)
 
-<!-- <style>.cGitButtonContainer, .cBallerinaTocContainer {display:none;}</style> -->
+

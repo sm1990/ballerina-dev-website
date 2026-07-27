@@ -3,7 +3,14 @@ layout: ballerina-inner-page
 title: Ballerina website license
 permalink: /license-of-site/
 description: Review the License of Site to understand the terms and conditions governing the use of Ballerina's website and its content.
-keywords: ballerinalang, integration, microservices, programming language, cloud native, ballerina language, license of site
+keywords:
+  - ballerinalang
+  - integration
+  - microservices
+  - programming language
+  - cloud native
+  - ballerina language
+  - license of site
 ---
 
 Except as detailed below, the content on this website is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/us/).
@@ -11,7 +18,7 @@ Except as detailed below, the content on this website is licensed under the [Cre
 ## What is not licensed?
 We say "nearly everything" as there are a few simple conditions that apply.
 
-If you’re looking to understand if and how you can use the Ballerina brand in a project, you’ve come to the right place. Please note that the user experience with all our products should never be altered. After reading through this site, if you still have questions, [contact us](/community/#report-issues).  
+If you’re looking to understand if and how you can use the Ballerina brand in a project, you’ve come to the right place. Please note that the user experience with all our products should never be altered. After reading through this site, if you still have questions, [contact us](/community/).  
 
 All of our brand features are protected by the applicable trademark, copyright and other intellectual property laws. However, Ballerina’s trademarks and other brand features are not included in this license. For information on usage of trademarks relating to the Ballerina project please go through our [Trademark usage policy](/trademark-usage-policy/).
 
@@ -19,7 +26,7 @@ In some cases, a page may include content consisting of images, audio or video m
 
 
 ## Attribution
-Proper attribution is required when you reuse or create modified versions of content that appears on a page made available under the terms of the Creative Commons Attribution license. The complete requirements for attribution can be found in section 4 of the <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/legalcode">Creative Commons legal code</a>.
+Proper attribution is required when you reuse or create modified versions of content that appears on a page made available under the terms of the Creative Commons Attribution license. The complete requirements for attribution can be found in section 4 of the [Creative Commons legal code](https://creativecommons.org/licenses/by/3.0/legalcode).
 
 In practice we ask that you provide attribution to Ballerina to the best of the ability of the medium in which you are producing the work.
 
@@ -43,4 +50,4 @@ Again, please link back to the original source page so that readers can refer to
 If you produce non-hypertext works, such as books, audio, or video, we ask that you make a best effort to include a spoken or written attribution in the spirit of the messages above.
 
 ## Contact
-If you have any comments regarding Ballerina.io license policies, please send feedback to <a target="_blank" href="mailto:legal@wso2.com">legal@wso2.com</a>. 
+If you have any comments regarding Ballerina.io license policies, please send feedback to [legal@wso2.com](mailto:legal@wso2.com). 

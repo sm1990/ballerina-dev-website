@@ -1,0 +1,36 @@
+.lead {
+  margin: 0 0 2rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  letter-spacing: -0.04em;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: min(220px, 100%);
+  max-height: 3.5rem;
+  object-fit: contain;
+}
+
+.intro {
+  margin: 0;
+  max-width: 48rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+[data-theme='dark'] .lead {
+  border-bottom-color: var(--ifm-color-emphasis-300);
+}

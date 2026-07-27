@@ -1,0 +1,39 @@
+---
+title: "1.1.2"
+description: "1.1.2 release notes"
+slug: "/1.1.x-release-notes/1.1.2"
+---
+
+import RawHtml from '@site/src/components/RawHtml';
+
+<RawHtml html={"<p>Ballerina 1.1.2 is a patch release iteration of its previous 1.1.1 release. Please refer to the Github repository for\n a list of <a href=\"https://github.com/ballerina-platform/ballerina-lang/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+label%3AType%2FBug+milestone%3A%22Ballerina+1.1.2%22+is%3Aclosed+\">bug fixes</a> \n and <a href=\"https://github.com/ballerina-platform/ballerina-lang/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+milestone%3A%22Ballerina+1.1.2%22+is%3Aclosed+label%3AType%2FImprovement+\">improvements</a>.</p>\n<p>You can use the inbuilt updating capability (introduced in jBallerina 1.1.0) to update to jBallerina 1.1.2 as follows.</p>"} />
+
+### For existing users:
+
+<RawHtml html={"<p>If you are already using <strong>jBallerina version 1.1.0 or 1.1.1</strong>, you can directly update your distribution to jBallerina\n 1.1.2 by executing the below command:</p>\n<blockquote>\n<p><code>ballerina dist update</code></p>\n</blockquote>\n<p>However, you need to execute the below commands if you have installed:\n- jBallerina 1.1.0 or 1.1.1 but switched to use a previous version: <code>ballerina dist pull jballerina-1.1.2</code>\n- jBallerina 1.1.2 via the installers: <code>ballerina dist use jballerina-1.1.2</code>\n- a jBallerina version below 1.1.0: install via the <a href=\"/downloads/\">installers</a></p>"} />
+
+### For new users:
+
+<RawHtml html={"<p>If you have not installed jBallerina, then download the <a href=\"/downloads/\">installers</a> to install.</p>"} />
+
+## Standard Library
+
+<RawHtml html={"<ul>\n<li>HTTP/1.1 entity trailer support.</li>\n<li>Request/Response header validation.</li>\n</ul>"} />
+
+## Build Tools
+
+<RawHtml html={"<ul>\n<li>Optimize the “ballerina run” execution flow, which reduces the Ballerina program/service startup time.</li>\n</ul>"} />
+
+## Test Framework
+
+<RawHtml html={"<ul>\n<li>Testing for individual .bal files has been implemented.</li>\n<li>Testerina report now lists the passed tests on the console.</li>\n</ul>"} />
+
+## DEV Tools
+
+### Open API
+
+<RawHtml html={"<ul>\n<li>Relative path support for OpenAPI validator.</li>\n<li>OpenAPI tool bug fixes.</li>\n</ul>"} />
+
+### IDE Plugins
+
+<RawHtml html={"<ul>\n<li>Chain invocation support for the &lsquo;Create Variable&rsquo; code action.</li>\n<li>Version support for the <code>Pull from Ballerina Central</code> code action.</li>\n<li>Array literal line break support for Formatting.</li>\n<li>Code completion and live template related fixes for the IntelliJ plugin.</li>\n<li>Bug fixes related to Code Formatting.</li>\n</ul>"} />

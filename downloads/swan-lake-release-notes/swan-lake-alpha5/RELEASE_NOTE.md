@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: Swan Lake Alpha5 
-permalink: /downloads/swan-lake-release-notes/swan-lake-alpha5/
-active: swan-lake-alpha5
+title: Swan Lake Alpha5
+description: Swan Lake Alpha5 - Release note
+slug: /swan-lake-release-notes/swan-lake-alpha5
 ---
+
 ### Overview of Ballerina Swan Lake Alpha5
 
 <em>This is the fifth Alpha release in a series of planned Alpha and Beta releases leading up to the Ballerina Swan Lake GA release.</em> 
@@ -19,7 +19,7 @@ It introduces the new language features planned for the Swan Lake GA release and
 
 ### Updating Ballerina
 
-If you are already using Ballerina, you can use the [update tool](/learn/update-tool/) to directly update to Ballerina Swan Lake Alpha5 as follows. 
+If you are already using Ballerina, you can use the [update tool](https://ballerina.io/learn/update-tool/) to directly update to Ballerina Swan Lake Alpha5 as follows. 
 
 To do this, first, execute the command below to get the update tool updated to its latest version. 
 
@@ -31,7 +31,7 @@ If you are using an **update tool version below 0.8.14**, execute the `ballerina
 
 ### Installing Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ### Language updates
 
@@ -61,9 +61,9 @@ const int SHIFTED = (BASE << 2) | 0xa;
 XML template literals now support the inclusion of multiple XML items of the same `xml` subtype as well as different `xml` subtypes.
 
 ```ballerina
-xml x1 = xml `<ele>item</ele><!--comment-->text<?foo?>`;
+xml x1 = xml `<ele>item</ele>text<?foo?>`;
 xml<xml:Element> x2 = xml `<ele>item1</ele><ele>item2</ele>`;
-xml<xml:Comment> x3 = xml `<!--comment1--><!--comment2-->`;
+xml<xml:Comment> x3 = xml ``;
 xml<xml:ProcessingInstruction> x4 = xml `<?foo?><?bar?>`;
 string interpolation = "Interpolation";
 xml<xml:Text> x5 = xml `text ${interpolation}`;

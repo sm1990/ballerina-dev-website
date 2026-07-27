@@ -1,0 +1,41 @@
+.features {
+  padding: 4rem 0 5rem;
+  background: #ffffff;
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+  color: #585a5e;
+}
+
+.featureCard {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid #d0d7d9;
+  border-radius: 1rem;
+  background: var(--site-card-bg);
+}
+
+.featureCard h3 {
+  margin-bottom: 0.75rem;
+  color: #585a5e;
+}
+
+.featureCard p {
+  margin-bottom: 0;
+  color: #585a5e;
+  line-height: 1.7;
+}
+
+:global([data-theme='dark']) .sectionTitle {
+  color: #eef3f3;
+}
+
+:global([data-theme='dark']) .featureCard {
+  border-color: var(--site-border-color);
+}
+
+:global([data-theme='dark']) .featureCard h3,
+:global([data-theme='dark']) .featureCard p {
+  color: #d7dedf;
+}

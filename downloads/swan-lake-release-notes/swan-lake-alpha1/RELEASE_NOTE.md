@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Alpha1
-permalink: /downloads/swan-lake-release-notes/swan-lake-alpha1/
-active: swan-lake-alpha1
+description: Swan Lake Alpha1 - Release note
+slug: /swan-lake-release-notes/swan-lake-alpha1
 ---
 
 ### Overview of Ballerina Swan Lake Alpha1  
@@ -74,7 +73,7 @@ You can use the update tool to update to Ballerina Swan Lake Alpha1 as follows.
 
 ##### For existing users
 
-If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
                         
 > `ballerina update`
 
@@ -82,11 +81,11 @@ From now onwards, the `ballerina` command has to be issued as `bal`. Next, execu
 
  > `bal dist pull slalpha1`                 
 
-However, if you are using a Ballerina version below 1.1.0, install via the [installers](/downloads/#swanlake).
+However, if you are using a Ballerina version below 1.1.0, install via the [installers](/downloads/).
 
 ##### For new users
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 #### Highlights
 
@@ -429,10 +428,10 @@ public class Listener {
     public isolated function immediateStop() returns error? {
     }
 
-    public isolated function detach(service object {} s) returns error? {
+    public isolated function detach(`service object {}` s) returns error? {
     }
 
-    public isolated function attach(service object {} s, string[]|string? name = ()) returns error? {
+    public isolated function attach(`service object {}` s, string[]|string? name = ()) returns error? {
     }
 
     public function init() returns error? {

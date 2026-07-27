@@ -1,16 +1,16 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Alpha3
-permalink: /downloads/swan-lake-release-notes/swan-lake-alpha3/
-active: swan-lake-alpha3
+description: Swan Lake Alpha3 - Release note
+slug: /swan-lake-release-notes/swan-lake-alpha3
 ---
+
 ### Overview of Ballerina Swan Lake Alpha3
 
 The Ballerina Swan Lake Alpha3 release includes the language features planned for the Ballerina Swan Lake release. Moreover, this release includes improvements and bug fixes to the compiler, runtime, standard library, and developer tooling. This release note lists only the features and updates added after the Alpha2 release of Ballerina Swan Lake.
 
 - [Updating Ballerina](#updating-ballerina)
-    - [For Existing Users](#for-existing-users)
-    - [For New Users](#for-new-users)
+    - [For Existing Users](#updating-ballerina)
+    - [For New Users](#installing-ballerina)
 - [What is New in Ballerina Swan Lake Alpha3](#what-is-new-in-ballerina-swan-lake-alpha3)
     - [Language](#language)
     - [Runtime](#runtime)
@@ -22,7 +22,7 @@ The Ballerina Swan Lake Alpha3 release includes the language features planned fo
 
 ### Updating Ballerina
 
-If you are already using Ballerina, you can directly update your distribution to Ballerina Swan Lake Alpha3 using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to Ballerina Swan Lake Alpha3 using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
 
 > `bal update`
 
@@ -32,7 +32,7 @@ If you are using an **update tool version below 0.8.14**, execute the `ballerina
 
 ### Installing Ballerina
 
-If you are a new user, then download the [installers](/downloads/#swanlake) to install.
+If you are a new user, then download the [installers](/downloads/) to install.
 
 ### What is new in Ballerina Swan Lake Alpha3
 
@@ -131,7 +131,7 @@ function process(function func, int v1, int v2) returns int {
 This function can be used to select all the items in a sequence that are of type `xml:Text`.
 
 ```ballerina
-xml name = xml `<name>Dan<middleName>Gerhard</middleName><!-- This is a comment -->Brown</name>`;
+xml name = xml `<name>Dan<middleName>Gerhard</middleName>Brown</name>`;
 xml:Text nameText = (name/*).text();
 io:println(nameText); // "DanBrown"
 ```
@@ -465,7 +465,7 @@ A similar format is used in the IMAP client.
 **POP3 service example**
 
 ```ballerina
-service object {} emailObserver = service object {
+`service object {}` emailObserver = service object {
    remote function onMessage(Message emailMessage) {
 
    }

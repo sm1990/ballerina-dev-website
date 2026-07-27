@@ -1,0 +1,40 @@
+{
+  "title": "Security policy",
+  "description": "Read our Security Policy to understand the measures we take to protect your data and ensure a secure experience with Ballerina.",
+  "slug": "/security-policy",
+  "keywords": [
+    "ballerina",
+    "programming language",
+    "security",
+    "security-policy",
+    "security advisories"
+  ],
+  "html": "<p>We take security issues very seriously and all the vulnerability reports are treated with the highest priority and confidentiality.</p>\n<p>Thank you for taking the time to <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Responsible_disclosure\">responsibly disclose</a> any vulnerabilities you find.</p>\n<h2 id=\"report-a-vulnerability\">Report a vulnerability</h2>\n<p>First of all, make sure that you are using the latest Ballerina version before you run an automated security scan or perform a penetration test against it. All security vulnerabilities and any other concerns related to security should be reported by sending an email to <a target=\"_blank\" href=\"mailto:security@ballerina.io\">security@ballerina.io</a>.</p>\n<blockquote>\n<p><strong>WARNING:</strong> To ensure end-user security, <strong>please do not use any other medium to report security vulnerabilities</strong>. Also, kindly refrain from disclosing the vulnerability details you come across with others, in any forums, sites, or other groups (public or private) before its mitigation and disclosure processes are completed.</p>\n</blockquote>\n<p>If you would like, you can encrypt your report using the  following public key to send secure messages to <a target=\"_blank\" href=\"mailto:security@ballerina.io\">security@ballerina.io</a>:</p>\n<blockquote>\n<p><a href=\"mailto:security@ballerina.io\">security@ballerina.io</a>: AC48 3C56 C0A0 6020 4BBE F3E4 182F 3F21 255F CCE9</p>\n</blockquote>\n<p>This key can also be found at <a target=\"_blank\" href=\"https://keys.openpgp.org/vks/v1/by-fingerprint/AC483C56C0A060204BBEF3E4182F3F21255FCCE9\">keys.openpgp.org</a>.</p>\n<p>Also, use the following template when reporting vulnerabilities so that it contains all the required information that helps expedite the analysis and mitigation process.</p>\n<ul>\n<li><strong>Vulnerable Ballerina artifact(s) and version(s):</strong> list  the vulnerable Ballerina artifact(s) and version(s)</li>\n<li><strong>Overview:</strong> provide a high-level overview of the issue and self-assessed severity</li>\n<li><strong>Description:</strong> include the steps to reproduce</li>\n<li><strong>Impact:</strong> state self-assessed impact</li>\n<li><strong>Solution:</strong> propose a  solution if you have one</li>\n</ul>\n<p>We will keep you informed of the progress towards fixing and disclosing of the vulnerability if the reported issue is identified as a true positive.</p>\n<h2 id=\"handle-a-vulnerability\">Handle a vulnerability</h2>\n<p>Here is an overview of our approach to handling vulnerabilities:</p>\n<ol>\n<li>The vulnerability will be reported privately to our security team at <a target=\"_blank\" href=\"mailto:security@ballerina.io\">security@ballerina.io</a>.</li>\n<li>Your email will be acknowledged within 24 hours, and you’ll receive a detailed response to your email indicating the next steps in handling your report. You will be updated on the progress.</li>\n<li>In case of a true-positive finding, the reported vulnerability will be confirmed and fixed by the relevant teams at WSO2.</li>\n<li>The fix will be applied to the affected components and a new version will be released immediately if required.</li>\n<li>The reported user is kept updated on the progress of the process.</li>\n</ol>\n<h2 id=\"get-acknowledged-and-rewarded\">Get acknowledged and rewarded</h2>\n<p>Your efforts in reporting vulnerabilities or any other issues related to the security of Ballerina will be recognized and honored via the <a target=\"_blank\" href=\"https://docs.wso2.com/display/Security/WSO2+Security+Reward+and+Acknowledgement+Program\">WSO2 security reward and acknowledgement program</a>.</p>\n<blockquote>\n<p><strong>Note:</strong> The reward program is currently applicable to vulnerabilities reported only in the <a target=\"_blank\" href=\"https://github.com/ballerina-platform/ballerina-lang/\">compiler, runtime, CLI tooling</a>, <a target=\"_blank\" href=\"https://github.com/ballerina-platform/ballerina-standard-library\">standard library</a>, <a target=\"_blank\" href=\"https://marketplace.visualstudio.com/items?itemName=wso2.ballerina\">VS Code extension</a>, and <a target=\"_blank\" href=\"https://ballerina.io\">website</a>.</p>\n</blockquote>\n<h2 id=\"security-advisories\">Security advisories</h2>\n<p>The below are the Ballerina security advisories that are already published.</p>\n<h3 id=\"compiler-runtime-and-cli-tooling\">Compiler, runtime, and CLI tooling</h3>\n<ul>\n<li><a target=\"_blank\" href=\"https://github.com/ballerina-platform/ballerina-lang/security/advisories/GHSA-f5qg-fqrw-v5ww\">CVE-2021-32700</a></li>\n</ul>\n",
+  "toc": [
+    {
+      "id": "report-a-vulnerability",
+      "value": "Report a vulnerability",
+      "level": 2
+    },
+    {
+      "id": "handle-a-vulnerability",
+      "value": "Handle a vulnerability",
+      "level": 2
+    },
+    {
+      "id": "get-acknowledged-and-rewarded",
+      "value": "Get acknowledged and rewarded",
+      "level": 2
+    },
+    {
+      "id": "security-advisories",
+      "value": "Security advisories",
+      "level": 2
+    },
+    {
+      "id": "compiler-runtime-and-cli-tooling",
+      "value": "Compiler, runtime, and CLI tooling",
+      "level": 3
+    }
+  ]
+}

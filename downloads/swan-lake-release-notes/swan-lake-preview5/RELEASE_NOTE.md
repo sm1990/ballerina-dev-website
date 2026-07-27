@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Preview 5
-permalink: /downloads/swan-lake-release-notes/swan-lake-preview5/
-active: swan-lake-preview5
+description: Swan Lake Preview 5 - Release note
+slug: /swan-lake-release-notes/swan-lake-preview5
 ---
+
 ### Overview of Ballerina Swan Lake Preview 5 
 
 This release is the fifth preview version of Ballerina Swan Lake. This release includes a new set of language features along with improvements and bug fixes to the compiler, runtime, standard libraries, and developer tooling.
@@ -33,7 +33,7 @@ You can use the update tool to update to Ballerina Swan Lake Preview 5 as follow
 
 #### For existing users
 
-If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
                         
 > `ballerina update`
 

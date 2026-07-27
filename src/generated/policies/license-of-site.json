@@ -1,0 +1,47 @@
+{
+  "title": "Ballerina website license",
+  "description": "Review the License of Site to understand the terms and conditions governing the use of Ballerina's website and its content.",
+  "slug": "/license-of-site",
+  "keywords": [
+    "ballerinalang",
+    "integration",
+    "microservices",
+    "programming language",
+    "cloud native",
+    "ballerina language",
+    "license of site"
+  ],
+  "html": "<p>Except as detailed below, the content on this website is licensed under the <a href=\"https://creativecommons.org/licenses/by/3.0/us/\">Creative Commons Attribution 3.0 License</a>.</p>\n<h2 id=\"what-is-not-licensed\">What is not licensed?</h2>\n<p>We say “nearly everything” as there are a few simple conditions that apply.</p>\n<p>If you’re looking to understand if and how you can use the Ballerina brand in a project, you’ve come to the right place. Please note that the user experience with all our products should never be altered. After reading through this site, if you still have questions, <a href=\"/community/#report-issues\">contact us</a>.</p>\n<p>All of our brand features are protected by the applicable trademark, copyright and other intellectual property laws. However, Ballerina’s trademarks and other brand features are not included in this license. For information on usage of trademarks relating to the Ballerina project please go through our <a href=\"/trademark-usage-policy/\">Trademark usage policy</a>.</p>\n<p>In some cases, a page may include content consisting of images, audio or video material, or a link to content on a different webpage (such as videos or slide decks). This content is not covered by the license, unless specifically noted.</p>\n<h2 id=\"attribution\">Attribution</h2>\n<p>Proper attribution is required when you reuse or create modified versions of content that appears on a page made available under the terms of the Creative Commons Attribution license. The complete requirements for attribution can be found in section 4 of the <a target=\"_blank\" href=\"https://creativecommons.org/licenses/by/3.0/legalcode\">Creative Commons legal code</a>.</p>\n<p>In practice we ask that you provide attribution to Ballerina to the best of the ability of the medium in which you are producing the work.</p>\n<p>There are several typical ways in which this might apply:</p>\n<h3 id=\"exact-reproductions\">Exact reproductions</h3>\n<p>If your online work exactly reproduces text or images from this site, in whole or in part, please include a paragraph at the bottom of your page that reads:</p>\n<p>Portions of this page are reproduced from work created and shared by Ballerine and used according to terms described in the Creative Commons 3.0 Attribution License.</p>\n<p>Also, please link back to the original source page so that readers can refer to it for more information.</p>\n<h3 id=\"modified-versions\">Modified versions</h3>\n<p>If your online work shows modified text or images based on the content from this site, please include a paragraph at the bottom of your page that reads:</p>\n<p>Portions of this page are modifications based on work created and shared by Ballerina and used according to terms described in the Creative Commons 3.0 Attribution License.</p>\n<p>Again, please link back to the original source page so that readers can refer to it for more information. This is even more important when the content has been modified.</p>\n<h3 id=\"other-media\">Other media</h3>\n<p>If you produce non-hypertext works, such as books, audio, or video, we ask that you make a best effort to include a spoken or written attribution in the spirit of the messages above.</p>\n<h2 id=\"contact\">Contact</h2>\n<p>If you have any comments regarding <a href=\"http://Ballerina.io\">Ballerina.io</a> license policies, please send feedback to <a target=\"_blank\" href=\"mailto:legal@wso2.com\">legal@wso2.com</a>.</p>\n",
+  "toc": [
+    {
+      "id": "what-is-not-licensed",
+      "value": "What is not licensed?",
+      "level": 2
+    },
+    {
+      "id": "attribution",
+      "value": "Attribution",
+      "level": 2
+    },
+    {
+      "id": "exact-reproductions",
+      "value": "Exact reproductions",
+      "level": 3
+    },
+    {
+      "id": "modified-versions",
+      "value": "Modified versions",
+      "level": 3
+    },
+    {
+      "id": "other-media",
+      "value": "Other media",
+      "level": 3
+    },
+    {
+      "id": "contact",
+      "value": "Contact",
+      "level": 2
+    }
+  ]
+}

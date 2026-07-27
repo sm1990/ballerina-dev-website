@@ -1,0 +1,26 @@
+{
+  "title": "Data-oriented programming with Ballerina",
+  "slug": "data-oriented-programming",
+  "description": "With its robust support, seamless integration with data constructs, and powerful features make Ballerina the top choice for efficient data handling and processing.",
+  "hero": {
+    "eyebrow": "Data-oriented programming is crucial in modern software development due to the complex and data-intensive nature of applications and the widespread adoption of microservices architecture, emphasizing the need for efficient data handling.",
+    "body": "With its robust support, seamless integration with data constructs, and powerful features make Ballerina the top choice for efficient data handling and processing.",
+    "image": "/images/usecases/integration/dop-banner.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {"type": "singleCode", "source": "record-type"},
+    {"type": "singleCode", "source": "union-types"},
+    {"type": "singleCode", "source": "optional-types"},
+    {"type": "singleCode", "source": "table-type"},
+    {"type": "singleCode", "source": "stream-type"},
+    {"type": "singleCode", "source": "type-constraints"},
+    {"type": "singleCode", "source": "xml-support"},
+    {"type": "singleCode", "source": "json-support"},
+    {"type": "singleCode", "source": "data-immutability"},
+    {"type": "singleCode", "source": "flexible-typing"},
+    {"type": "singleCode", "source": "expressive-query"},
+    {"type": "singleCode", "source": "pattern-matching"}
+  ]
+}

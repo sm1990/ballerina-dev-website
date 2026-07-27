@@ -1,0 +1,80 @@
+{
+  "title": "Ballerina vs. Java for data-oriented programming",
+  "slug": "ballerina-vs-java-for-data-oriented-programming",
+  "description": "With its robust support, seamless integration with data constructs, and powerful features make Ballerina the top choice for efficient data handling and processing.",
+  "hero": {
+    "eyebrow": "Data-oriented programming is crucial in modern software development due to the complex and data-intensive nature of applications and the widespread adoption of microservices architecture, emphasizing the need for efficient data handling.",
+    "body": "With its robust support, seamless integration with data constructs, and powerful features make Ballerina the top choice for efficient data handling and processing.",
+    "image": "/images/usecases/integration/java/java-banner.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeCompare",
+      "source": "record-type",
+      "leftSource": "record-type-java",
+      "rightSource": "record-type-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "union-types",
+      "leftSource": "union-types-java",
+      "rightSource": "union-types-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "optional-types",
+      "leftSource": "optional-types-java",
+      "rightSource": "optional-types-ballerina"
+    },
+    {
+      "type": "singleCode",
+      "source": "table-type"
+    },
+    {
+      "type": "singleCode",
+      "source": "stream-type"
+    },
+    {
+      "type": "codeCompare",
+      "source": "type-constraints",
+      "leftSource": "type-constraints-java",
+      "rightSource": "type-constraints-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "xml-support",
+      "leftSource": "xml-support-java",
+      "rightSource": "xml-support-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "json-support",
+      "leftSource": "json-support-java",
+      "rightSource": "json-support-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "data-immutability",
+      "leftSource": "data-immutability-java",
+      "rightSource": "data-immutability-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "flexible-typing",
+      "leftSource": "flexible-typing-java",
+      "rightSource": "flexible-typing-ballerina"
+    },
+    {
+      "type": "singleCode",
+      "source": "expressive-query"
+    },
+    {
+      "type": "codeCompare",
+      "source": "pattern-matching",
+      "leftSource": "pattern-matching-java",
+      "rightSource": "pattern-matching-ballerina"
+    }
+  ]
+}

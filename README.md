@@ -1,24 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ballerina Website
 
-## Run website locally
+This website is built with [Docusaurus](https://docusaurus.io/) and exported as
+static files for GitHub Pages.
 
-First, execute the following command to install necessary packages
-
-```bash
-npm install
-```
-
-Execute the following command to run the development server:
+## Installation
 
 ```bash
-npm run dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
 
+```bash
+pnpm start
+```
 
-## Learn More
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-To learn more about Next.js, take a look at the following resources:
+## Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+```bash
+pnpm build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true pnpm deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> pnpm deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

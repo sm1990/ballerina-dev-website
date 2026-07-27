@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: Swan Lake Update 9 (2201.9.5) 
-permalink: /downloads/swan-lake-release-notes/2201.9.5/
-active: 2201.9.5
+title: Swan Lake Update 9 (2201.9.5)
+description: Swan Lake Update 9 (2201.9.5) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.9.5
 ---
 
 ## Overview of Ballerina Swan Lake Update 9 (2201.9.5)
@@ -11,7 +10,7 @@ active: 2201.9.5
 
 ## Update Ballerina
 
-Run the command below to update your current Ballerina installation directly to 2201.9.5 by using the [Ballerina Update Tool](/learn/update-tool/).
+Run the command below to update your current Ballerina installation directly to 2201.9.5 by using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/).
 
 ```
 $ bal dist pull 2201.9.5
@@ -19,7 +18,7 @@ $ bal dist pull 2201.9.5
 
 ## Install Ballerina
 
-If you have not installed Ballerina, then, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then, download the [installers](/downloads/) to install.
 
 ## Runtime updates
 

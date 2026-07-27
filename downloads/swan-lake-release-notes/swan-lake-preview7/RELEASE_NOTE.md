@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Preview 7
-permalink: /downloads/swan-lake-release-notes/swan-lake-preview7/
-active: swan-lake-preview7
+description: Swan Lake Preview 7 - Release note
+slug: /swan-lake-release-notes/swan-lake-preview7
 ---
 
 ### Overview of Ballerina Swan Lake Preview 7 
@@ -37,7 +36,7 @@ You can use the update tool to update to Ballerina Swan Lake Preview 7 as follow
 
 ##### For existing users
 
-If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
                         
 > `ballerina update`
 

@@ -1,0 +1,72 @@
+{
+  "title": "Ballerina for Event-Driven Architecture (EDA)",
+  "slug": "eda",
+  "description": "Event-driven architecture provides loose coupling, scalability, responsiveness, extensibility, and fault tolerance. Remarkably, Ballerina can produce and consume events like no other.",
+  "hero": {
+    "eyebrow": "Event-driven architecture provides loose coupling, scalability, responsiveness, extensibility, and fault tolerance.",
+    "body": "It enables real-time processing, integration, and autonomy, making it ideal for complex systems. Remarkably, Ballerina can produce and consume events like no other.",
+    "image": "/images/eda1.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeImageSplit",
+      "source": "passing-around-messages"
+    },
+    {
+      "type": "tabbedCode",
+      "source": "webhook_with_websub",
+      "links": [
+        {
+          "label": "WebSub Subscriber",
+          "href": "https://ballerina.io/learn/by-example/websub-webhook-sample/"
+        },
+        {
+          "label": "WebSub Hub",
+          "href": "https://github.com/ballerina-platform/module-ballerina-websubhub/tree/main/examples/kafka-hub"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Subscriber",
+          "source": "webhook_with_websub"
+        },
+        {
+          "label": "Hub",
+          "source": "webhook_with_websub_hub"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "websocket"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "graphql"
+    },
+    {
+      "type": "tabbedCode",
+      "source": "grpc",
+      "tabs": [
+        {
+          "label": "Code",
+          "source": "grpc"
+        },
+        {
+          "label": "Proto",
+          "source": "proto"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "file"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "email"
+    }
+  ]
+}

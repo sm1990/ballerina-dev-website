@@ -1,0 +1,121 @@
+---
+title: "Configure values"
+description: "Below are a few advanced use cases in which you configure values using configurable variables."
+slug: "/configure-values"
+keywords:
+  - "ballerina"
+  - "programming language"
+  - "configurable"
+  - "variables"
+  - "kubernetes"
+  - "pod"
+---
+
+Below are a few advanced use cases in which you configure values using configurable variables.
+
+
+## Configure in multiple modules
+
+The configurable variables can be defined in different modules. Therefore, it is necessary to provide the information of the module in which the variable is defined.
+
+The module information requirement can be explained in the following table according to the variable definition.
+<br/>
+<table width="100%">
+<thead>
+<tr>
+<th colspan="2"><strong>Place where the variable is defined</strong></th>
+<th colspan="2"><strong>Module information</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Package</strong></td>
+<td><strong>Module</strong></td>
+<td><strong>Organization name</strong></td>
+<td><strong>Module Name</strong></td>
+</tr>
+<tr>
+<td>Root package</td>
+<td>Root module</td>
+<td>optional</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>Root package</td>
+<td>Non-root module</td>
+<td>optional</td>
+<td>mandatory</td>
+</tr>
+<tr>
+<td>Non-root package</td>
+<td>Root/ Non-root module</td>
+<td>mandatory</td>
+<td>mandatory</td>
+</tr>
+</tbody>
+</table>
+<br/>
+
+>**Note:** The module information is not needed for configuring single `bal` file execution.
+
+The format of providing module information in each configuration syntax is described below.
+
+#### Command-line argument syntax
+
+The key of a CLI parameter can be specified as,
+
+```
+-Ckey=value
+```
+
+The key can contain module information as follows.
+
+```
+key:= [[org-name .] module-name .] variable
+```
+
+#### TOML syntax
+
+The following format is used to provide the module information of a variable in the TOML based configuration.
+
+```toml
+[org-name.module-name]
+variable-name = "value"
+```
+
+#### Environment variable syntax
+
+The key of an environment variable can be specified as,
+
+```
+BAL_CONFIG_VAR_key=value
+```
+
+The key can contain module information as follows.
+
+```
+key:= ORGNAME_MODULENAME_VARIABLE
+```
+
+Each part in the structured identifier of the key is converted to uppercase, and the dots are converted to underscores.
+
+## Configure in a Kubernetes environment
+
+In the Kubernetes environment, a pod can use the configuration TOML file that contains the configuration values in the
+following ways.
+
+- as files in a data volume that is mounted on one or more of its containers
+- as environment variables for the containers
+
+## Configure sensitive values
+
+Configuration values containing passwords or secrets should not be passed with the normal configuration.
+
+Such sensitive data can be passed to runtime using a different TOML file, and we can prioritize it higher than the
+normal configuration by prefixing the file path in the `BAL_CONFIG_FILES` environment variable.
+
+The configuration of sensitive data can be handled at the deployment of the Ballerina program.
+
+In a Kubernetes environment, a Kubernetes secret can be used to inject sensitive data into the containers. The TOML file
+that contains the sensitive data can be stored as a secret resource in Kubernetes and can be placed in a volume mount
+when running a pod. The file path can be specified via an environment variable as above.

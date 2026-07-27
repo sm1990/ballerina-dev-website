@@ -1,0 +1,106 @@
+{
+  "title": "Ballerina vs. Apollo for GraphQL",
+  "slug": "ballerina-vs-apollo-for-graphql",
+  "description": "Ballerina is an excellent choice for GraphQL due to its GraphQL-friendly abstractions. Choose Ballerina as your go-to language for building robust and scalable GraphQL APIs.",
+  "hero": {
+    "eyebrow": "GraphQL's flexibility, efficient data fetching, reduced network traffic, versioning capabilities, backend aggregation, and improved developer experience make it a powerful choice for implementing the Backend for Frontend architecture, providing enhanced performance and simplified data management for frontend applications.",
+    "body": "Ballerina is an excellent choice for GraphQL due to its GraphQL-friendly abstractions. Choose Ballerina as your go-to language for building robust and scalable GraphQL APIs.",
+    "image": "/images/usecases/integration/apollo-graphql/apollo-graphql-banner.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "comparisonPairs",
+      "source": "similarities",
+      "items": [
+        {
+          "source": "similarities-object-types-ballerina",
+          "leftSource": "similarities-object-types-graphql",
+          "rightSource": "similarities-object-types-ballerina",
+          "leftLabel": "GraphQL",
+          "rightLabel": "Ballerina"
+        },
+        {
+          "source": "similarities-nullability-ballerina",
+          "leftSource": "similarities-nullability-graphql",
+          "rightSource": "similarities-nullability-ballerina",
+          "leftLabel": "GraphQL",
+          "rightLabel": "Ballerina"
+        },
+        {
+          "source": "similarities-union-types-ballerina",
+          "leftSource": "similarities-union-types-graphql",
+          "rightSource": "similarities-union-types-ballerina",
+          "leftLabel": "GraphQL",
+          "rightLabel": "Ballerina"
+        },
+        {
+          "source": "similarities-default-values-ballerina",
+          "leftSource": "similarities-default-values-graphql",
+          "rightSource": "similarities-default-values-ballerina",
+          "leftLabel": "GraphQL",
+          "rightLabel": "Ballerina"
+        }
+      ]
+    },
+    {
+      "type": "codeCompare",
+      "source": "clean-and-simple-code",
+      "leftSource": "clean-and-simple-code-apollo",
+      "rightSource": "clean-and-simple-code-ballerina"
+    },
+    {
+      "type": "codeCompare",
+      "source": "simplifying-graphql-api-development",
+      "leftSource": "simplifying-graphql-api-development-graphql",
+      "rightSource": "simplifying-graphql-api-development-ballerina",
+      "leftLabel": "Generated schema",
+      "rightLabel": "Ballerina code"
+    },
+    {
+      "type": "codeCompare",
+      "source": "subscription-support",
+      "leftSource": "subscription-support-apollo",
+      "rightSource": "subscription-support-ballerina"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "designer-tool"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "cli-tool"
+    },
+    {
+      "type": "singleCode",
+      "source": "better-security"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "git-based-workflow"
+    },
+    {
+      "type": "singleCode",
+      "source": "connect-with-anything"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "diagram-when-you-need"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "community-driven-development"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "trivial-hosting-in-wso2-choreo-ipaas",
+      "links": [
+        {
+          "label": "Explore WSO2 Integration Platform",
+          "href": "https://wso2.com/integration-platform/"
+        }
+      ]
+    }
+  ]
+}

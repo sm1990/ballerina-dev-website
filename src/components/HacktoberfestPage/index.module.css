@@ -1,0 +1,598 @@
+.pageShell {
+  padding-bottom: 4rem;
+}
+
+.container {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.contentSection {
+  padding: 0 0 4rem;
+}
+
+.heroSection {
+  padding: 5rem 0;
+}
+
+.anchorHeading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem;
+  scroll-margin-top: 80px;
+}
+
+.anchorButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #20b6b0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.anchorButton:hover {
+  color: #8af0eb;
+}
+
+.glassCard {
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.sectionLead {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.challengeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.challengeCard {
+  background: #494949;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.challengeCardDark {
+  background: transparent;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+}
+
+.challengeCard h3 {
+  font-size: 20px;
+  margin: 0 0 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  padding: 0.55rem 0.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.centered {
+  text-align: center;
+}
+
+.cardActions {
+  display: grid;
+  gap: 0.625rem;
+  margin-top: 1rem;
+}
+
+.actionLink,
+.supportLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+.actionLink {
+  background: #000;
+  color: #fff;
+}
+
+.challengeCardDark .actionLink {
+  background: transparent;
+  border: 0.5px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.actionLink:hover {
+  background: #fff;
+  color: #000;
+}
+
+.supportColumn {
+  display: grid;
+  gap: 1rem;
+}
+
+.supportCard {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+}
+
+.supportCard h3 {
+  margin: 0;
+}
+
+.supportCard p {
+  margin: 1.5rem 0;
+}
+
+.supportLink {
+  color: #fff;
+  width: fit-content;
+}
+
+.stackCard {
+  background: #f48024;
+  color: #000;
+}
+
+.stackCard .supportLink {
+  border: 1px solid #f48023;
+  color: #fff;
+}
+
+.stackCard .supportLink:hover {
+  background: #f48023;
+}
+
+.discordCard {
+  background: #5865f2;
+  color: #fff;
+}
+
+.discordCard .supportLink {
+  border: 1px solid #5865f2;
+  color: #fff;
+}
+
+.discordCard .supportLink:hover {
+  background: #5865f2;
+}
+
+.supportCardDark.stackCard,
+.supportCardDark.discordCard {
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  backdrop-filter: blur(6px) saturate(120%);
+}
+
+.supportCardDark.stackCard {
+  background: linear-gradient(180deg, rgb(244 128 35 / 18%), rgb(244 128 35 / 10%));
+  border: 1px solid rgb(244 128 35 / 60%);
+}
+
+.supportCardDark.discordCard {
+  background: linear-gradient(180deg, rgb(88 101 242 / 20%), rgb(88 101 242 / 10%));
+  border: 1px solid rgb(88 101 242 / 55%);
+}
+
+.rewardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.rewardCard {
+  text-align: center;
+}
+
+.rewardCard img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.rewardCard p {
+  margin: 1rem 0 0;
+}
+
+.rewardCardDark {
+  background: none;
+}
+
+.ruleCardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.ruleCard {
+  padding: 1.25rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 1);
+}
+
+.ruleCard h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.ruleCard ul {
+  margin: 1.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.ruleCard li + li {
+  margin-top: 0.7rem;
+}
+
+.ruleMist {
+  background: linear-gradient(180deg, rgb(230 234 235 / 20%), rgb(230 234 235 / 10%));
+  border-color: #e6eaeb;
+}
+
+.ruleInk {
+  background: linear-gradient(180deg, rgb(28 28 63 / 20%), rgb(28 28 63 / 10%));
+  border-color: #a0a0ff;
+}
+
+.ruleTeal {
+  background: linear-gradient(180deg, rgb(32 182 176 / 20%), rgb(32 182 176 / 10%));
+  border-color: #20b6b0;
+}
+
+.ruleCardWide {
+  grid-column: 1 / -1;
+}
+
+.termsCopy,
+.termsCopyDark,
+.termsCopyLight {
+  margin-top: 1rem;
+}
+
+.termsCopy a,
+.termsCopyDark a,
+.termsCopyLight a,
+.ruleTextPanel a,
+.ruleTextPanelLight a,
+.simpleCard a,
+.heroCopy2025 a,
+.heroText2024 a,
+.rewardTextCard a,
+.sectionLead a {
+  color: #20b6b0;
+  text-decoration: none;
+}
+
+.termsCopy a:hover,
+.termsCopyDark a:hover,
+.termsCopyLight a:hover,
+.ruleTextPanel a:hover,
+.ruleTextPanelLight a:hover,
+.simpleCard a:hover,
+.heroCopy2025 a:hover,
+.heroText2024 a:hover,
+.rewardTextCard a:hover,
+.sectionLead a:hover {
+  text-decoration: underline;
+}
+
+.rulesContent {
+  line-height: 1.6;
+}
+
+.ruleTextPanel {
+  color: #fff;
+}
+
+.ruleTextPanel > ul,
+.ruleTextPanelLight > ol {
+  padding-left: 1.4rem;
+}
+
+.ruleTextPanel li + li,
+.ruleTextPanelLight li + li {
+  margin-top: 0.7rem;
+}
+
+.rewards2024Layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.rewardTextCard {
+  border: 0.3px solid #a7a8ab;
+  padding: 25px;
+}
+
+.arrowList {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 0;
+}
+
+.arrowList li {
+  padding: 0 0 6px 40px;
+  background: url('/images/main-right-arrow-home-hover.svg') left top / 32px no-repeat;
+}
+
+.swagGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.swagCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  background: transparent;
+}
+
+.swagCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storeCard {
+  background: #20b6b0;
+  color: #fff;
+  text-decoration: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.storeCard:hover {
+  background: #57595d;
+  color: #fff;
+}
+
+.storeCard img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.simpleCardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.simpleCard {
+  border: 0.3px solid #a7a8ab;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.simpleCard h3 {
+  margin: 0 0 1rem;
+  font-size: 22px;
+}
+
+.hero2025 {
+  color: #fff;
+}
+
+.hero2024 {
+  background: #000;
+  color: #fff;
+}
+
+.hero2023 {
+  background: #000;
+  color: #fff;
+}
+
+.logoRow2025 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heroLogoBlock {
+  flex: 0 0 auto;
+}
+
+.heroDividerBlock {
+  display: flex;
+  align-items: center;
+}
+
+.heroDivider {
+  height: 120px;
+  width: 2px;
+}
+
+.hacktoberfestLogo2025 {
+  height: 120px;
+  width: auto;
+}
+
+.ballerinaLogo2025 {
+  height: 60px;
+  width: auto;
+}
+
+.heroCopy2025 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.heroCopy2025 h1,
+.heroText2024 h1,
+.heroText2023 h1 {
+  margin: 0 0 1.5rem;
+  line-height: 1;
+}
+
+.heroCopy2025 h1 {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.heroCopy2025 p {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.hero2024Grid,
+.hero2023Grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.heroText2024 h1 {
+  color: #000;
+  font-size: 3.45rem;
+  background: #eff0f1;
+  display: inline-block;
+  padding: 0 0.25rem;
+}
+
+.heroText2024 p,
+.heroText2023 p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.heroLogos2024 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.verticalBeige,
+.iconTall,
+.heroDividerTall {
+  height: 250px;
+  width: auto;
+}
+
+.heroText2023 h1 {
+  font-size: 2.45rem;
+  margin-bottom: 1.5rem;
+}
+
+.heroImage2023 img {
+  width: 100%;
+  max-width: 340px;
+  display: block;
+  margin-inline: auto;
+}
+
+.hack2025 {
+  background:
+    radial-gradient(87% 900px at 90% 5%, #1c1c3f -20%, transparent 60%),
+    radial-gradient(80% 900px at 1% 15%, #1c1c3f -55%, transparent 54%),
+    radial-gradient(90% 1500px at 90% 50%, #1c1c3f -10%, transparent 50%),
+    radial-gradient(90% 1500px at 0% 50%, #1c1c3f -10%, transparent 50%),
+    radial-gradient(90% 2000px at 0% 90%, #1c1c3f -10%, transparent 50%),
+    #000;
+  color: #fff;
+}
+
+.hack2024 {
+  background: #000;
+  color: #fff;
+}
+
+.hack2023 {
+  background: #000;
+  color: #fff;
+}
+
+.section2024,
+.section2023 {
+  padding-top: 4rem;
+}
+
+.section2024 :global(h2),
+.section2023 :global(h2) {
+  color: inherit;
+}
+
+@media (max-width: 996px) {
+  .challengeGrid,
+  .rewards2024Layout,
+  .hero2024Grid,
+  .hero2023Grid,
+  .simpleCardGrid,
+  .ruleCardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .rewardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .swagGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .logoRow2025 {
+    flex-direction: column;
+  }
+
+  .heroDividerBlock {
+    display: none;
+  }
+
+  .heroCopy2025 {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroCopy2025 h1 {
+    font-size: 48px;
+  }
+
+  .heroCopy2025 p {
+    font-size: 20px;
+  }
+
+  .rewardGrid {
+    grid-template-columns: 1fr;
+  }
+}

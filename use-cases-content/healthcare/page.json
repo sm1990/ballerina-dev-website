@@ -1,0 +1,58 @@
+{
+  "title": "Ballerina for healthcare",
+  "slug": "healthcare",
+  "description": "Write code with healthcare-friendly abstractions.",
+  "hero": {
+    "eyebrow": "Ballerina is the only integration language built for healthcare.",
+    "body": "With its native support for healthcare standards like FHIR, HL7, and X12, Ballerina enables rapid health tech application development. Develop your healthcare solutions with Ballerina and make a difference in the healthcare sector today.",
+    "image": "/images/health-intro.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeImageSplit",
+      "source": "why-ballerina-for-healthcare-apps",
+      "links": [
+        {
+          "label": "View on Ballerina Central",
+          "href": "https://central.ballerina.io/ballerinax?q=health&page=1"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-is-fhir"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ballerina-is-hl7"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "powerful-health-data-mapping"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "connect-to-emrs"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "powerful-edi-for-claims"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "ai-pair-programming"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "apis-are-new-dll",
+      "links": [
+        {
+          "label": "Get started with Choreo IDevP for free",
+          "href": "https://wso2.com/choreo/internal-developer-platform"
+        }
+      ]
+    }
+  ]
+}

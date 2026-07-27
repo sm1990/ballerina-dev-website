@@ -1,0 +1,37 @@
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(82, 195, 194, 0.1), rgba(230, 234, 235, 0.5));
+}
+
+:global([data-theme='dark']) .card {
+  background: linear-gradient(180deg, rgba(82, 195, 194, 0.16), rgba(88, 90, 94, 0.35));
+}
+
+.compact {
+  margin-top: 3rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.description {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.actions {
+  margin-top: 1.25rem;
+}

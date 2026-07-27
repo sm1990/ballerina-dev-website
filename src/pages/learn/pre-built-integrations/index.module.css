@@ -1,0 +1,97 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+}
+
+.description {
+  max-width: 62rem;
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tag,
+.activeTag {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  padding: 0.45rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.tag:hover,
+.activeTag {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.activeTag {
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover {
+  text-decoration: none;
+}
+
+.cardBody {
+  height: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.cardTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.cardDescription {
+  margin: 0 0 1rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.65;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cardTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}

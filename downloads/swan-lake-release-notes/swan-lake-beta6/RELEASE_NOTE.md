@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Beta6
-permalink: /downloads/swan-lake-release-notes/swan-lake-beta6/
-active: swan-lake-beta6
+description: Swan Lake Beta6 - Release note
+slug: /swan-lake-release-notes/swan-lake-beta6
 ---
 
 ## Overview of Ballerina Swan Lake Beta6
@@ -13,7 +12,7 @@ It introduces the new language features planned for the Swan Lake GA release and
 
 ## Updating Ballerina
 
-If you are already using Ballerina, you can use the [update tool](/learn/update-tool/) to directly update to Ballerina Swan Lake Beta6 as follows. 
+If you are already using Ballerina, you can use the [update tool](https://ballerina.io/learn/update-tool/) to directly update to Ballerina Swan Lake Beta6 as follows. 
 
 To do this, first, execute the command below to get the update tool updated to its latest version. 
 
@@ -25,7 +24,7 @@ If you are using an **update tool version below 0.8.14**, execute the `ballerina
 
 ## Installing Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ## Language updates
 

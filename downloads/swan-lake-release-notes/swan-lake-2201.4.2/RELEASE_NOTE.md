@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: 2201.4.2 (Swan Lake) 
-permalink: /downloads/swan-lake-release-notes/2201-4-2/
-active: 2201-4-2
+title: 2201.4.2 (Swan Lake)
+description: 2201.4.2 (Swan Lake) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.4.2
 ---
 
 ## Overview of Ballerina Swan Lake 2201.4.2
@@ -11,7 +10,7 @@ active: 2201-4-2
 
 ## Update Ballerina
 
-Update your current Ballerina installation directly to 2201.4.2 using the [Ballerina Update Tool](/learn/update-tool/) as follows.
+Update your current Ballerina installation directly to 2201.4.2 using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/) as follows.
 
 1. Run `bal update` to get the latest version of the Update Tool.
 
@@ -19,7 +18,7 @@ Update your current Ballerina installation directly to 2201.4.2 using the [Balle
 
 ## Install Ballerina
 
-If you have not installed Ballerina, then, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then, download the [installers](/downloads/) to install.
 
 ## Language updates
 

@@ -1,0 +1,189 @@
+{
+  "title": "Ballerina for AI",
+  "slug": "ai",
+  "description": "Ballerina is the best language to write your AI-powered applications that consume LLMs and other generative models.",
+  "hero": {
+    "eyebrow": "AI is no longer just trained — it's integrated.",
+    "body": "Ballerina is purpose-built for integration, making it an ideal choice for bringing AI into your applications. With built-in abstractions designed for invoking your favourite large language models and other generative AI technologies, Ballerina simplifies and streamlines AI integration like never before.",
+    "image": "/images/Vectors-05.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeDiagramSplit",
+      "source": "why-is-ballerina-the-way-you-should-write-ai-applications",
+      "diagram": "/images/ai_project_comp.png",
+      "links": [
+        {
+          "label": "HR Retrieval Augmented Generation Application",
+          "href": "https://github.com/xlight05/ai-samples/blob/usecase-samples/hr_agent_rag_app/main.bal"
+        }
+      ]
+    },
+    {
+      "type": "codeDiagramSplit",
+      "source": "ballerina-ai-agent",
+      "diagram": "/images/agent-diagram.png",
+      "links": [
+        {
+          "label": "Personal Assistant with Calendar and Email Management",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/personal_ai_assistant_agent"
+        }
+      ]
+    },
+    {
+      "type": "singleCode",
+      "source": "blog-analyzer-using-natural-programming",
+      "codeSource": "natural_expressions",
+      "links": [
+        {
+          "label": "Sample: Building an AI-Powered Blog Analyzer Using Ballerina's Natural Expressions",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/rate-blog-posts-using-natural-expressions/main.bal"
+        }
+      ]
+    },
+    {
+      "type": "tabbedCode",
+      "source": "natural_programming_compile_time_code_generation",
+      "links": [
+        {
+          "label": "Sample: Building e-commerce product filtering system with Compile-Time Code Generation",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/filter-products-using-compile-time-code-generation/main.bal"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "AI-synthesized function bodies",
+          "source": "natural_programming_compile_time_code_generation_code"
+        },
+        {
+          "label": "Compile-time data generation",
+          "source": "natural_programming_const_compile_time_code_generation_code"
+        }
+      ]
+    },
+    {
+      "type": "imageTabs",
+      "source": "copilot_your_partner",
+      "tabs": [
+        {
+          "label": "Code generation",
+          "image": "/images/ai_codegen.png"
+        },
+        {
+          "label": "AI Data Mapper",
+          "image": "/images/ai_datamapper.png"
+        },
+        {
+          "label": "Ask Ballerina",
+          "image": "/images/ai_ask.png"
+        },
+        {
+          "label": "Test generation",
+          "image": "/images/ai_test.png"
+        }
+      ]
+    },
+    {
+      "type": "imageTabs",
+      "source": "natural_programming_vs_code_features",
+      "tabs": [
+        {
+          "label": "Code from requirements",
+          "image": "/images/np_code_generation_from_requirements.png"
+        },
+        {
+          "label": "Drift Detection & Fixes",
+          "image": "/images/np_drift_check.gif"
+        },
+        {
+          "label": "Tests from requirements",
+          "image": "/images/np_test_generation_from_requirements.png"
+        }
+      ]
+    },
+    {
+      "type": "tabbedCode",
+      "source": "ballerina_text_connectors",
+      "links": [
+        {
+          "label": "Sample 1: Summarize text using OpenAI",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/summarize_text_using_openai/main.bal"
+        },
+        {
+          "label": "Sample 2: Function Calling using OpenAI",
+          "href": "https://github.com/xlight05/ai-samples/blob/usecase-samples/function_calling/main.bal"
+        },
+        {
+          "label": "Sample 3: Tweet on upcoming and recently released movies using Azure OpenAI",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/tweet_on_upcoming_and_recently_released_movies_using_azure_openai/main.bal"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Sample 1",
+          "source": "openai1"
+        },
+        {
+          "label": "Sample 2",
+          "source": "openai2"
+        },
+        {
+          "label": "Sample 3",
+          "source": "openai3"
+        }
+      ]
+    },
+    {
+      "type": "tabbedCode",
+      "source": "ballerina_multimodel",
+      "links": [
+        {
+          "label": "Sample 1: Describe an image using OpenAI",
+          "href": "https://github.com/xlight05/ai-samples/blob/usecase-samples/describe_photo/main.bal"
+        },
+        {
+          "label": "Sample 2: Create products in Shopify using OpenAI",
+          "href": "https://github.com/ballerina-guides/ai-samples/tree/main/create_products_in_shopify_using_openai/main.bal"
+        },
+        {
+          "label": "Sample 3: Convert audio to text and translate using OpenAI",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/convert_audio_to_text_and_translate_using_openai/main.bal"
+        },
+        {
+          "label": "Sample 4: Audio-to-text summarization using OpenAI",
+          "href": "https://github.com/ballerina-guides/ai-samples/blob/main/audio_to_text_summarization_using_openai/main.bal"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Sample 1",
+          "source": "multimodel1"
+        },
+        {
+          "label": "Sample 2",
+          "source": "multimodel2"
+        },
+        {
+          "label": "Sample 3",
+          "source": "multimodel3"
+        },
+        {
+          "label": "Sample 4",
+          "source": "multimodel4"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "hosting_ipaas",
+      "links": [
+        {
+          "label": "Get started with WSO2 Integration Platform for free",
+          "href": "https://wso2.com/integration-platform/"
+        }
+      ]
+    }
+  ]
+}

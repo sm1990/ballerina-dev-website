@@ -1,0 +1,402 @@
+.page {
+  background:
+    radial-gradient(circle at top left, rgba(82, 195, 194, 0.12), transparent 30%),
+    linear-gradient(180deg, var(--ifm-background-color) 0%, var(--ifm-background-surface-color) 100%);
+}
+
+.hero,
+.section,
+.sectionAlt {
+  padding: 4rem 0;
+}
+
+.hero {
+  padding-top: 2rem;
+}
+
+.sectionAlt {
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 76%, #52c3c2 24%);
+}
+
+[data-theme='dark'] .sectionAlt {
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 88%, #52c3c2 12%);
+}
+
+.heroGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+}
+
+.heroCopy {
+  max-width: 42rem;
+}
+
+.heroEyebrow,
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #52c3c2;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 4.75rem);
+  line-height: 0.98;
+}
+
+.heroDescription,
+.sectionDescription {
+  margin: 1rem 0 0;
+  max-width: 48rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.heroActions,
+.rewardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.inlineAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.primaryButton {
+  padding: 0.85rem 1.35rem;
+  background: #52c3c2;
+  color: #0f1f22;
+  box-shadow: 0 20px 36px rgba(82, 195, 194, 0.2);
+}
+
+.primaryButton:hover {
+  color: #0f1f22;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.secondaryButton {
+  padding: 0.85rem 1.35rem;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-emphasis-400) 60%, #52c3c2 40%);
+  color: var(--ifm-font-color-base);
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 86%, #fff 14%);
+}
+
+.secondaryButton:hover,
+.inlineAction:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.inlineAction {
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-emphasis-300) 60%, #52c3c2 40%);
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+}
+
+.heroMosaic {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.heroMosaic img {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(88, 90, 94, 0.12);
+}
+
+.heroMosaic img:nth-child(2),
+.heroMosaic img:nth-child(3) {
+  transform: translateY(1.2rem);
+}
+
+.sectionIntro {
+  margin-bottom: 2rem;
+}
+
+.anchorOffset {
+  display: block;
+  position: relative;
+  top: -6rem;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.cardGrid,
+.tracksGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.featureCard,
+.trackCard,
+.socialCard,
+.calloutCard,
+.contactBanner,
+.rewardBanner {
+  border: 1px solid color-mix(in srgb, var(--ifm-color-emphasis-200) 78%, #52c3c2 22%);
+  border-radius: 1.5rem;
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 92%, #fff 8%);
+  box-shadow: 0 14px 30px rgba(88, 90, 94, 0.07);
+}
+
+[data-theme='dark'] .featureCard,
+[data-theme='dark'] .trackCard,
+[data-theme='dark'] .socialCard,
+[data-theme='dark'] .calloutCard,
+[data-theme='dark'] .contactBanner,
+[data-theme='dark'] .rewardBanner {
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 95%, #52c3c2 5%);
+}
+
+.featureCard,
+.trackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featureCard:hover {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.featureHeader {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featureTitle,
+.trackTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.featureDescription {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+}
+
+.featureLink {
+  color: #52c3c2;
+  font-weight: 600;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(82, 195, 194, 0.16);
+  color: #2f8f8e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.socialGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.socialCard:hover {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.socialLogoWrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 3.8rem;
+}
+
+.socialLogo {
+  max-width: 10rem;
+  max-height: 2.2rem;
+  object-fit: contain;
+}
+
+.socialName {
+  font-weight: 600;
+}
+
+.trackList {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.trackList li + li {
+  margin-top: 0.55rem;
+}
+
+.rewardBanner,
+.contactBanner {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 1.7rem;
+}
+
+.rewardTitle {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.rewardText {
+  margin: 0.9rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+}
+
+.resourceGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.resourceCard {
+  display: block;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  box-shadow: 0 14px 28px rgba(88, 90, 94, 0.08);
+}
+
+.resourceCard:hover {
+  transform: translateY(-2px);
+}
+
+.resourceCard img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.calloutGrid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.calloutCard {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.calloutCard img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.certificationLogo {
+  max-width: 16rem;
+  justify-self: center;
+}
+
+@media (max-width: 996px) {
+  .heroGrid,
+  .calloutCard,
+  .rewardBanner,
+  .contactBanner {
+    grid-template-columns: 1fr;
+  }
+
+  .cardGrid,
+  .tracksGrid,
+  .resourceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .socialGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heroMosaic img:nth-child(2),
+  .heroMosaic img:nth-child(3) {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .section,
+  .sectionAlt {
+    padding: 3rem 0;
+  }
+
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroActions,
+  .rewardActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .inlineAction {
+    width: 100%;
+  }
+}

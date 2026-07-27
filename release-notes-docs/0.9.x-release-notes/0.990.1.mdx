@@ -1,0 +1,19 @@
+---
+title: "0.990.1"
+description: "0.990.1 release notes"
+slug: "/0.9.x-release-notes/0.990.1"
+---
+
+import RawHtml from '@site/src/components/RawHtml';
+
+<RawHtml html={"<p>Ballerina 0.990.1 release is an iteration effort that aims to stabilize the previous 0.990.0 release, which is an implementation based on the Ballerina 0.990.0 language specification.</p>"} />
+
+# Improvements
+
+## Language
+
+<RawHtml html={"<p>Return statement is now optional for functions with optional return type signatures.</p>\n<pre class=\"line-numbers language-ballerina\"><code class=\"language-ballerina\">function foo(string txt) returns error? {\n    int x = check int.convert(txt);\n}\n</code></pre>\n\n<p>The above is the same as the following code.</p>\n<pre class=\"line-numbers language-ballerina\"><code class=\"language-ballerina\">function foo(string txt) returns error? {\n    int x = check int.convert(txt);\n    return;\n}\n</code></pre>\n\n<p>Function invocation support for string literals.</p>\n<pre class=\"line-numbers language-ballerina\"><code class=\"language-ballerina\">string name = “ballerina”.toUpper();\n</code></pre>\n\n<p>There are some updates to the underlying stream processing layer of Ballerina. It introduces a few changes in the syntax.</p>\n<ul>\n<li>When accessing the stream attributes you should use the stream name as the prefix. If stream name is <code>x</code> and attribute is <code>a</code>, you should access as <code>x.a</code>.</li>\n<li>Support for table and stream joins.</li>\n</ul>"} />
+
+# Bug Fixes
+
+<RawHtml html={"<p>Please refer <a href=\"https://github.com/ballerina-platform/ballerina-lang/issues?q=is%3Aissue+milestone%3A0.990.1+is%3Aclosed+label%3AType%2FBug\">Github milestone issues</a> to view bug fixes</p>"} />

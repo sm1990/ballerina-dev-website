@@ -1,0 +1,69 @@
+{
+  "title": "Ballerina for developing back-ends for modern front-ends",
+  "slug": "bff",
+  "description": "Ballerina's support for various protocols, availability of connectors, built-in security features, and advanced data transformation capabilities make it the ideal choice for developing back-ends for modern front-ends.",
+  "hero": {
+    "eyebrow": "Web apps and mobile apps are the face of digital organizations.",
+    "body": "Back-ends powering these apps need to be highly secure, scalable, and responsive. In addition, such back-ends need to aggregate data from multiple services, transform data as necessary, and transmit those to front-ends over required protocols. Ballerina's support for various protocols, availability of connectors, built-in security features, and advanced data transformation capabilities make it the ideal choice for developing back-ends for modern front-ends.",
+    "image": "/images/bff-intro.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "codeImageSplit",
+      "source": "rest-support",
+      "diagram": "/images/usecases/integration/bff/rest.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "json-support",
+      "diagram": "/images/usecases/integration/bff/multi_part.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "constraint-validation",
+      "diagram": "/images/usecases/integration/bff/constraint_validation.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "graphql",
+      "diagram": "/images/usecases/integration/bff/graphql.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "websockets",
+      "diagram": "/images/usecases/integration/bff/websocket.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "server-auth",
+      "diagram": "/images/usecases/integration/bff/react_jwt.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "security",
+      "diagram": "/images/usecases/integration/bff/comprehensive-security.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "client-auth",
+      "diagram": "/images/usecases/integration/bff/microservices.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "persist",
+      "diagram": "/images/usecases/integration/bff/persists.gif"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "deployment",
+      "links": [
+        {
+          "label": "Get started with WSO2 Integration Platform for free",
+          "href": "https://wso2.com/integration-platform/"
+        }
+      ]
+    }
+  ]
+}

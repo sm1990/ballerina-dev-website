@@ -1,0 +1,149 @@
+export type NewsArticle = {
+  url: string;
+  title: string;
+  author?: string;
+  source: string;
+  date: string;
+};
+
+const newsArticles: NewsArticle[] = [
+  {
+    "url": "https://vocal.media/01/top-5-programming-languages-trending-in-2025",
+    "title": "Top 5 Programming Languages Trending in 2025",
+    "author": "Rahul Sharma",
+    "source": "Vocal",
+    "date": "Jan 10, 2025"
+  },
+  {
+    "url": "https://economist.com.na/93773/education/nust-students-ace-ballerina-hackathon/",
+    "title": "NUST students ace Ballerina Hackathon",
+    "source": "Economist - Namibia",
+    "date": "Dec 3, 2024"
+  },
+  {
+    "url": "https://www.analyticsinsight.net/programming/will-there-be-a-new-dominant-programming-language-by-2030",
+    "title": "Will There Be a New Dominant Programming Language by 2030?",
+    "author": "Monica",
+    "source": "Analytics Insight",
+    "date": "Oct 4, 2024"
+  },
+  {
+    "url": "https://redmonk.com/sogrady/2024/09/12/language-rankings-6-24/",
+    "title": "The RedMonk Programming Language Rankings: June 2024",
+    "author": "Stephen O'Grady",
+    "source": "RedMonk",
+    "date": "Sep 12, 2024"
+  },
+  {
+    "url": "https://thearabianpost.com/innovation-in-programming-5-emerging-open-source-languages-catching-attention/",
+    "title": "Innovation in Programming: 5 Emerging Open Source Languages Catching Attention",
+    "source": "Arabian Post",
+    "date": "July 16, 2024"
+  },
+  {
+    "url": "https://middaylive.com/technology/5-cutting-edge-programming-languages-that-you-should-not-ignore/",
+    "title": "5 Cutting-edge programming languages that you should not ignore",
+    "author": "Editorial Team",
+    "source": "Midday Live",
+    "date": "May 25, 2024"
+  },
+  {
+    "url": "https://eluminoustechnologies.com/blog/best-microservices-framework/",
+    "title": "Best Microservices Framework: A Handy Listicle",
+    "author": "Robert S",
+    "source": "eLuminous Technologies",
+    "date": "April 8, 2024"
+  },
+  {
+    "url": "https://www.rankred.com/new-programming-languages-to-learn/",
+    "title": "14 New Programming Languages To Learn In 2024",
+    "author": "Varun Kumar",
+    "source": "RankRed",
+    "date": "Jan 23, 2024"
+  },
+  {
+    "url": "https://itechnolabs.ca/top-microservices-frameworks-to-build-highly-scalable-applications/",
+    "title": "Top Microservices Frameworks to Build Highly Scalable Applications",
+    "author": "Davesh Sharma",
+    "source": "iTechnoLabs",
+    "date": "Oct 31, 2023"
+  },
+  {
+    "url": "https://www.slant.co/topics/20337/~visual-programming-languages",
+    "title": "What are the best visual programming languages?",
+    "source": "Slant",
+    "date": "Oct 3, 2023"
+  },
+  {
+    "url": "https://bestcodinglanguage.com/for-cloud-computing/",
+    "title": "Best Programming Languages For Cloud Computing",
+    "author": "Awais Yaseen",
+    "source": "Best coding language",
+    "date": "Sep 15, 2023"
+  },
+  {
+    "url": "https://www.hyperlinkinfosystem.com/blog/popular-microservices-frameworks",
+    "title": "10 Most Popular Microservices Framework",
+    "author": "Harnil Oza",
+    "source": "Hyperlink InfoSystem",
+    "date": "Sep 14, 2023"
+  },
+  {
+    "url": "https://essayservice.com/blog/top-15-programming-languages-worth-learning",
+    "title": "Top 15 Programming Languages Worth Learning in 2023",
+    "author": "Jennifer Lockman",
+    "source": "Essay Service.com",
+    "date": "Sep 7, 2023"
+  },
+  {
+    "url": "https://levelup.gitconnected.com/10-lesser-known-programming-languages-revolutionizing-the-tech-industry-july-2023-edition-64f356d0df8d",
+    "title": "10 lesser-known programming languages revolutionizing the tech industry",
+    "author": "Arslan Mirza",
+    "source": "Level Up Coding",
+    "date": "Jul 4, 2023"
+  },
+  {
+    "url": "https://www.cmarix.com/blog/best-microservices-frameworks/",
+    "title": "Top microservices frameworks to build scalable applications",
+    "author": "Parth Patel",
+    "source": "Cmarix",
+    "date": "June 19, 2023"
+  },
+  {
+    "url": "https://www.codelivly.com/lesser-known-programming-languages-worth-exploring/",
+    "title": "8 lesser-known programming languages worth exploring",
+    "author": "Rocky Sah",
+    "source": "Codelivly",
+    "date": "June 13, 2023"
+  },
+  {
+    "url": "https://www.tatvasoft.com/blog/top-12-microservices-frameworks/",
+    "title": "Top 12 microservices frameworks",
+    "author": "Vishal Shah",
+    "source": "Tatvasoft",
+    "date": "Apr 25, 2023"
+  },
+  {
+    "url": "https://levelup.gitconnected.com/14-mind-blowing-programming-languages-youve-probably-never-heard-of-b96550980661",
+    "title": "14 programming languages you've probably never heard of",
+    "author": "Clement Brian",
+    "source": "Level Up Coding",
+    "date": "Apr 12, 2023"
+  },
+  {
+    "url": "https://camunda.com/blog/2022/09/seven-best-programming-languages-for-microservices/",
+    "title": "7 best programming languages for microservices",
+    "author": "Josh Wulf",
+    "source": "Camunda",
+    "date": "Sep 29, 2022"
+  },
+  {
+    "url": "https://www.simform.com/blog/microservices-framework/",
+    "title": "The Top Go-To Microservices Frameworks for a Scalable Application",
+    "author": "Hiren Dhaduk",
+    "source": "SIMFORM",
+    "date": "March 15, 2022"
+  }
+];
+
+export default newsArticles;

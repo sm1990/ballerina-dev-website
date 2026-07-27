@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Alpha2
-permalink: /downloads/swan-lake-release-notes/swan-lake-alpha2/
-active: swan-lake-alpha2
+description: Swan Lake Alpha2 - Release note
+slug: /swan-lake-release-notes/swan-lake-alpha2
 ---
+
 ### Overview of Ballerina Swan Lake Alpha2
 
 This Alpha2 release includes the language features planned for the Ballerina Swan Lake release. Moreover, this release includes improvements and bug fixes to the compiler, runtime, standard library, and developer tooling. This release note lists only the features and updates added after the Alpha1 release of Ballerina Swan Lake.
@@ -39,11 +39,11 @@ This Alpha2 release includes the language features planned for the Ballerina Swa
 
 ### Updating Ballerina
 
-You can use the [update tool](/learn/update-tool/) to update to Ballerina Swan Lake Alpha2 as follows.
+You can use the [update tool](https://ballerina.io/learn/update-tool/) to update to Ballerina Swan Lake Alpha2 as follows.
 
 #### For existing users
 
-If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
+If you are already using Ballerina, you can directly update your distribution to the Swan Lake channel using the [Ballerina update tool](https://ballerina.io/learn/update-tool/). To do this, first, execute the command below to get the update tool updated to its latest version. 
 
 > `bal update`
 
@@ -53,7 +53,7 @@ If you are using an **update tool version below 0.8.14**, execute the `ballerina
 
 #### For new users
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ### Highlights
 

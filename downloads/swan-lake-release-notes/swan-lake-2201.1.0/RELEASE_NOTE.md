@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: 2201.1.0 (Swan Lake Update 1)
-permalink: /downloads/swan-lake-release-notes/2201.1.0/
-active: 2201-1-0
+description: 2201.1.0 (Swan Lake Update 1) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.1.0
 ---
 
 ## Overview of Ballerina 2201.1.0 (Swan Lake Update 1)
@@ -12,13 +11,13 @@ active: 2201-1-0
 
 ## Update Ballerina
 
-If you are already using Ballerina, use the [Ballerina Update tool](/learn/update-tool/) to directly update to 2201.1.0 by running the command below.
+If you are already using Ballerina, use the [Ballerina Update tool](https://ballerina.io/learn/update-tool/) to directly update to 2201.1.0 by running the command below.
 
 > `bal dist pull 2201.1.0`
 
 ## Install Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ## Language updates
 
@@ -485,7 +484,7 @@ public type Foo record {
     int[] x;
 };
 
-public function getRecord(string recordName) returns record{} = @java:Method {
+public function getRecord(string recordName) returns `record{}` = @java:Method {
     'class: "javalibs.app.App"
 } external;
 ```
@@ -669,7 +668,7 @@ To view bug fixes, see the GitHub milestone for Ballerina 2201.1.0 (Swan Lake Up
 - [Language server](https://github.com/ballerina-platform/ballerina-lang/issues?q=is%3Aissue+is%3Aclosed+label%3AType%2FBug+label%3ATeam%2FLanguageServer+milestone%3A%22Ballerina+2201.1.0%22+)
 - [OpenAPI](https://github.com/ballerina-platform/openapi-tools/issues?q=is%3Aissue+label%3AType%2FBug+milestone%3A%22Swan+Lake+2201.1.0%22+is%3Aclosed)
 
-<style>.cGitButtonContainer, .cBallerinaTocContainer {display:none;}</style>
+
 
 ## Ballerina packages updates
 

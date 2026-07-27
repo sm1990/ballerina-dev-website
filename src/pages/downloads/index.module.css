@@ -1,0 +1,151 @@
+.page {
+  background:
+    radial-gradient(circle at top right, rgba(82, 195, 194, 0.12), transparent 24rem),
+    radial-gradient(circle at bottom left, rgba(88, 90, 94, 0.08), transparent 24rem),
+    var(--ifm-background-color);
+}
+
+.hero {
+  padding: 2rem 0 1rem;
+}
+
+.title {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2.75rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  max-width: 44rem;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.versionCard {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 1rem 2rem rgba(88, 90, 94, 0.08);
+}
+
+[data-theme='dark'] .versionCard {
+  background: rgba(17, 21, 27, 0.72);
+}
+
+.versionEyebrow,
+.stepIndex {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.versionValue {
+  font-size: 1.35rem;
+}
+
+.versionMeta {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.section {
+  padding: 1.5rem 0 2rem;
+}
+
+.utilitySection {
+  background: linear-gradient(180deg, transparent, rgba(82, 195, 194, 0.05));
+}
+
+.sectionHeader {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 0.5rem;
+}
+
+.packageGrid,
+.utilityGrid,
+.stepsGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.packageGrid {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.utilityGrid {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.stepsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.packageCard,
+.utilityCard,
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1rem 2rem rgba(88, 90, 94, 0.06);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.packageCard:hover,
+.utilityCard:hover,
+.stepCard:hover {
+  color: inherit;
+  transform: translateY(-3px);
+  border-color: rgba(82, 195, 194, 0.8);
+  box-shadow: 0 1.2rem 2.4rem rgba(82, 195, 194, 0.14);
+}
+
+.packageIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.packageName {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.packageFile {
+  word-break: break-word;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.packageMeta,
+.utilityCard span,
+.stepCard a {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.utilityCard h3,
+.stepCard h2 {
+  margin: 0;
+}
+
+.stepCard code {
+  font-size: 0.95em;
+}

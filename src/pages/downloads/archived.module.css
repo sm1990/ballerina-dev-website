@@ -1,0 +1,145 @@
+.page {
+  background:
+    radial-gradient(circle at top left, rgba(82, 195, 194, 0.08), transparent 24rem),
+    var(--ifm-background-color);
+}
+
+.hero {
+  padding: 2rem 0 1rem;
+}
+
+.title {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2.75rem, 5vw, 4.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  max-width: 46rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.section {
+  padding: 1rem 0 2.5rem;
+}
+
+.sideNav {
+  position: sticky;
+  top: 5.75rem;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.sideNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sideNavList a {
+  color: var(--ifm-color-emphasis-800);
+  text-decoration: none;
+}
+
+.sideNavList a:hover {
+  color: var(--ifm-color-primary);
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.groupSection {
+  scroll-margin-top: 6rem;
+}
+
+.groupHeader {
+  margin-bottom: 1rem;
+}
+
+.groupHeader h2 {
+  margin-bottom: 0.25rem;
+}
+
+.groupNote {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.releaseStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.releaseCard {
+  padding: 1rem 1.1rem 1.15rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 1rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 0.9rem 1.8rem rgba(88, 90, 94, 0.05);
+  scroll-margin-top: 6rem;
+}
+
+.releaseHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  margin-bottom: 0.85rem;
+}
+
+.releaseHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.releaseHeader span {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.releaseTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.releaseTable td {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.releaseTable td:last-child {
+  width: 7rem;
+  text-align: right;
+}
+
+.releaseNotesLink {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 996px) {
+  .sideNav {
+    position: static;
+    margin-bottom: 1.25rem;
+  }
+}

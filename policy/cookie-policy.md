@@ -3,15 +3,22 @@ layout: ballerina-inner-page
 title: Cookie policy
 permalink: /cookie-policy/
 description: Learn about our use of cookies and how we ensure your privacy and data security on the Ballerina website in our Cookie Policy.
-keywords: ballerinalang, integration, microservices, programming language, cloud native, ballerina language, cookie policy
+keywords:
+  - ballerinalang
+  - integration
+  - microservices
+  - programming language
+  - cloud native
+  - ballerina language
+  - cookie policy
 
 ---
 
-Below is information about how <a target="_blank" href="https://ballerina.io/">https://ballerina.io/</a>, <a target="_blank" href="https://central.ballerina.io/">Ballerina Central</a>, <a target="_blank" href="https://blog.ballerina.io/">Ballerina Blog</a>, and any other site to which a link to these terms may appear, use cookies.
+Below is information about how [https://ballerina.io/](https://ballerina.io/), [Ballerina Central](https://central.ballerina.io/), [Ballerina Blog](https://blog.ballerina.io/), and any other site to which a link to these terms may appear, use cookies.
 
 The Site stores and retrieves information on your browser using cookies. This information is used to make the Site work as you expect it to. It is not personally identifiable to you, but it can be used to give you a more personalized web experience.
 
-This cookie policy is part of our <a target="_blank" href="/privacy-policy/">privacy policy</a>. It explains the following:
+This cookie policy is part of our [privacy policy](/privacy-policy/). It explains the following:
 
 ## What are cookies?
 
@@ -45,7 +52,7 @@ For example, we can use these cookies to learn more about which features are the
 
 Our website will set several types of third-party cookies and we do not control the operation of any of them. The third-party cookies, which may be set include:
 
-- Google Analytics - we use Google Analytics to collect data about website usage. This data does not include personally identifiable information. For more information, view the <a target="_blank" href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+- Google Analytics - we use Google Analytics to collect data about website usage. This data does not include personally identifiable information. For more information, view the [Google Privacy Policy](https://policies.google.com/privacy).
 
 ## What type of cookies do we use?
 
@@ -72,18 +79,18 @@ These cookies are necessary for the website to function and cannot be switched o
   </thead>
   <tbody>
     <tr>
-      <td rowspan="11" colspan="1">First party</div></td>
-      <td rowspan="2" colspan="1"><a class="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
+      <td rowSpan="11" colSpan="1">First party</td>
+      <td rowSpan="2" colSpan="1"><a className="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
       <td><code>OptanonConsent</code></td>
-      <td rowspan="2" colspan="1">364 days</td>
+      <td rowSpan="2" colSpan="1">364 days</td>
     </tr>
     <tr>
       <td><code>OptanonAlertBoxClosed</code></td>
     </tr>
     <tr>
-      <td rowspan="9" colspan="1"><a class="in-cell-link" href="https://central.ballerina.io" target="_blank">central.ballerina.io</a></td>
+      <td rowSpan="9" colSpan="1"><a className="in-cell-link" href="https://central.ballerina.io" target="_blank">central.ballerina.io</a></td>
       <td><code>USER_EMAIL</code></td>
-      <td rowspan="7" colspan="1">7.5 hours</td>
+      <td rowSpan="7" colSpan="1">7.5 hours</td>
     </tr>
     <tr>
       <td><code>USER_ID</code></td>
@@ -105,7 +112,7 @@ These cookies are necessary for the website to function and cannot be switched o
     </tr>
     <tr>
       <td><code>admin_org_names</code></td>
-      <td rowspan="2" colspan="1">Session</td>
+      <td rowSpan="2" colSpan="1">Session</td>
     </tr>
     <tr>
       <td><code>token_expired</code></td>
@@ -128,21 +135,21 @@ These cookies allow us to count visits and traffic sources so we can measure and
   </thead>
   <tbody>
     <tr>
-      <td rowspan="12" colspan="1">First party</td>
-      <td rowspan="9" colspan="1"><a class="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
+      <td rowSpan="12" colSpan="1">First party</td>
+      <td rowSpan="9" colSpan="1"><a className="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
       <td><code>_hjSessionUser_865786</code></td>
       <td>364</td>
     </tr>
     <tr>
       <td><code>_ga</code></td>
-      <td rowspan="2" colspan="1">729</div></td>
+      <td rowSpan="2" colSpan="1">729</td>
     </tr>
     <tr>
       <td><code>_ga_xxxxxxxxxx</code></td>
     </tr>
     <tr>
       <td><code>_hjIncludedInPageviewSample</code></td>
-      <td rowspan="12" colspan="1">0</td>
+      <td rowSpan="12" colSpan="1">0</td>
     </tr>
     <tr>
       <td><code>_gi</code></td>
@@ -160,24 +167,24 @@ These cookies allow us to count visits and traffic sources so we can measure and
       <td><code>_hjIncludedInSessionSample</code></td>
     </tr>
     <tr>
-      <td><a class="in-cell-link" href="https://central.ballerina.io" target="_blank">central.ballerina.io</a></td>
+      <td><a className="in-cell-link" href="https://central.ballerina.io" target="_blank">central.ballerina.io</a></td>
       <td><code>route</code></td>
     </tr>
     <tr>
-      <td><a class="in-cell-link" href="https://api.central.ballerina.io" target="_blank">api.central.ballerina.io</a></td>
+      <td><a className="in-cell-link" href="https://api.central.ballerina.io" target="_blank">api.central.ballerina.io</a></td>
       <td><code>route</code></td>
     </tr>
     <tr>
-      <td><a class="in-cell-link" href="https://lib.ballerina.io" target="_blank">lib.ballerina.io</a></td>
+      <td><a className="in-cell-link" href="https://lib.ballerina.io" target="_blank">lib.ballerina.io</a></td>
       <td><code>route</code></td>
     </tr>
     <tr>
-      <td rowspan="3" colspan="1">Third party</td>
-      <td rowspan="3" colspan="1"><a class="in-cell-link" href="https://script.hotjar.com" target="_blank">script.hotjar.com</a></td>
+      <td rowSpan="3" colSpan="1">Third party</td>
+      <td rowSpan="3" colSpan="1"><a className="in-cell-link" href="https://script.hotjar.com" target="_blank">script.hotjar.com</a></td>
       <td><code>_hjIncludedInSessionSample</code></td>
     </tr>
     <tr>
-      <td><code>_hjIncludedInPageviewSample</<code>code></td>
+      <td><code>_hjIncludedInPageviewSample</code></td>
     </tr>
     <tr>
       <td><code>_hjIncludedInSessionSample_865786</code></td>
@@ -200,46 +207,46 @@ These cookies allow us to count visits and traffic sources so we can measure and
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2" colspan="1">First party</td>
-      <td rowspan="2" colspan="1"><a class="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
+      <td rowSpan="2" colSpan="1">First party</td>
+      <td rowSpan="2" colSpan="1"><a className="in-cell-link" href="https://ballerina.io" target="_blank">ballerina.io</a></td>
       <td><code>_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx</code></td>
-      <td rowspan="3" colspan="1">0</td>
+      <td rowSpan="3" colSpan="1">0</td>
     </tr>
     <tr>
       <td><code>_gat_UA-nnnnnnn-nn</code></td>
     </tr>
     <tr>
-      <td rowspan="10" colspan="1">Third party</td>
-      <td rowspan="3" colspan="1"><a class="in-cell-link" href="https://resources.wso2.com" target="_blank">resources.wso2.com</a></td>
+      <td rowSpan="10" colSpan="1">Third party</td>
+      <td rowSpan="3" colSpan="1"><a className="in-cell-link" href="https://resources.wso2.com" target="_blank">resources.wso2.com</a></td>
       <td><code>pardot</code></td>
     </tr>
     <tr>
       <td><code>visitor_id142131-hash</code></td>
-      <td rowspan="4" colspan="1">3649</div></td>
+      <td rowSpan="4" colSpan="1">3649</td>
     </tr>
     <tr>
       <td><code>visitor_id#####</code></td>
     </tr>
     <tr>
-      <td rowspan="2" colspan="1"><a class="in-cell-link" href="https://pardot.com" target="_blank">pardot.com</a></td>
+      <td rowSpan="2" colSpan="1"><a className="in-cell-link" href="https://pardot.com" target="_blank">pardot.com</a></td>
       <td><code>visitor_id#####</code></td>
     </tr>
     <tr>
       <td><code>visitor_id142131-hash</code></td>
     </tr>
     <tr>
-      <td><a class="in-cell-link" href="https://pi.pardot.com" target="_blank">pi.pardot.com</a></td>
+      <td><a className="in-cell-link" href="https://pi.pardot.com" target="_blank">pi.pardot.com</a></td>
       <td><code>pardot</code></td>
       <td>0</td>
     </tr>
     <tr>
-      <td rowspan="4" colspan="1"><a class="in-cell-link" href="https://youtube.com" target="_blank">youtube.com</a></td>
+      <td rowSpan="4" colSpan="1"><a className="in-cell-link" href="https://youtube.com" target="_blank">youtube.com</a></td>
       <td><code>CONSENT</code></td>
       <td>729</td>
     </tr>
     <tr>
       <td><code>VISITOR_INFO1_LIVE</code></td>
-      <td rowspan="2" colspan="1">179</td>
+      <td rowSpan="2" colSpan="1">179</td>
     </tr>
     <tr>
       <td><code>VISITOR_PRIVACY_METADATA</code></td>

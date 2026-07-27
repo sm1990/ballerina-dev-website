@@ -1,0 +1,705 @@
+.homepage {
+  background:
+    radial-gradient(circle at top right, rgba(82, 195, 194, 0.1), transparent 24rem),
+    linear-gradient(180deg, transparent, transparent);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 4.5rem;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.14), transparent 20rem),
+    linear-gradient(135deg, #585a5e 0%, #4d5b60 28%, #346d70 58%, #52c3c2 100%);
+}
+
+.heroInner {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+}
+
+.heroCopy {
+  color: #ffffff;
+}
+
+.heroEyebrow,
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.heroTitle {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.heroList {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  max-width: 46rem;
+}
+
+.heroList li {
+  position: relative;
+  margin: 0 0 0.95rem;
+  padding-left: 1.6rem;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.heroList li::before {
+  content: '';
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: #52c3c2;
+  box-shadow: 0 0 0 0.2rem rgba(82, 195, 194, 0.18);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.heroSecondaryButton {
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.heroSecondaryButton:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.heroVisual {
+  display: grid;
+  gap: 1rem;
+}
+
+.heroVisualFrame {
+  position: relative;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1.75rem;
+  background: rgba(12, 17, 19, 0.24);
+  box-shadow: 0 2rem 4rem rgba(5, 10, 12, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.heroVisualFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.heroBadge {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.heroBadge span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.heroBadge strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.altSection {
+  background:
+    linear-gradient(180deg, rgba(230, 234, 235, 0.58), rgba(230, 234, 235, 0.18));
+}
+
+.sectionHeading {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  margin-bottom: 0.85rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.sectionDescription {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.integrationGrid {
+  display: grid;
+  gap: 2rem;
+  align-items: stretch;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.integrationCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding-block: 1.5rem;
+}
+
+.integrationCopy .sectionHeading {
+  margin-bottom: 0;
+}
+
+.integrationCopy .sectionTitle {
+  margin-top: 0;
+  margin-block-start: -12px;
+}
+
+.integrationLead {
+  max-width: 40rem;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ifm-heading-color);
+}
+
+.diagramCard {
+  padding: 1.5rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 1.5rem;
+  background: var(--ifm-background-color);
+  box-shadow: 0 1.2rem 2.5rem rgba(24, 39, 43, 0.08);
+}
+
+.diagramCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.featureGrid,
+.logoGrid,
+.newsGrid,
+.videoGrid {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.featureGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.featureCard,
+.newsCard,
+.videoCard,
+.logoCard {
+  border: 1px solid var(--site-border-color);
+  border-radius: 1.4rem;
+  background: var(--ifm-background-color);
+  box-shadow: 0 1rem 2rem rgba(24, 39, 43, 0.06);
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1.5rem;
+}
+
+.featureIcon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 1.25rem;
+  object-fit: contain;
+}
+
+.featureTitle {
+  margin-bottom: 0.7rem;
+  font-size: 1.35rem;
+}
+
+.featureDescription {
+  margin: 0 0 1rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.7;
+}
+
+.featureLink,
+.videoLink {
+  font-weight: 700;
+  color: var(--ifm-link-color);
+}
+
+.logoRows {
+  display: grid;
+  gap: 2.75rem;
+}
+
+.logoRow {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 3.5rem;
+}
+
+.logoRowPrimary {
+  max-width: 100%;
+}
+
+.logoRowCompact {
+  max-width: 78rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.logoCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.75rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.logoCardWide {
+  min-width: 12rem;
+}
+
+.logoCard img {
+  max-width: 100%;
+  max-height: 3.2rem;
+  object-fit: contain;
+}
+
+.logoBallerinaCentral img {
+  max-width: 100%;
+  max-height: none;
+}
+
+.logoTechVenturas img {
+  max-width: 100%;
+  max-height: none;
+}
+
+.logoDeveloperPlatform {
+  min-width: 16rem;
+}
+
+.newsGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.newsCarousel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.newsCarouselFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.newsCarouselDots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newsCarouselDot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(88, 90, 94, 0.22);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.newsCarouselDot:hover {
+  transform: scale(1.08);
+}
+
+.newsCarouselDotActive {
+  background: var(--ifm-color-primary);
+}
+
+.newsCarouselControls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.newsCarouselButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 999px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-heading-color);
+  cursor: pointer;
+  font-size: 1.45rem;
+  line-height: 0;
+  box-shadow: 0 0.75rem 1.5rem rgba(24, 39, 43, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.newsCarouselButton span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-0.02em);
+}
+
+.newsCarouselButton:hover {
+  transform: translateY(-1px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 1rem 1.8rem rgba(24, 39, 43, 0.1);
+}
+
+.heroSecondaryButton:focus-visible,
+.newsCarouselButton:focus-visible,
+.newsCarouselDot:focus-visible,
+.featureCard:focus-visible,
+.newsCard:focus-visible,
+.videoCard:focus-visible,
+.eventActionButton:focus-visible,
+.eventType:focus-visible,
+.logoCard:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ifm-color-primary) 45%, white);
+  outline-offset: 4px;
+}
+
+.eventsList {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.eventRow {
+  display: grid;
+  grid-template-columns: minmax(12rem, 15rem) minmax(0, 1fr) minmax(11rem, 14rem);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 1.35rem;
+  background: var(--ifm-background-color);
+  box-shadow: 0 1rem 2rem rgba(24, 39, 43, 0.06);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.eventRow:hover {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, var(--site-border-color));
+  box-shadow: 0 1.2rem 2.2rem rgba(24, 39, 43, 0.1);
+  transform: translateY(-1px);
+}
+
+.eventDatePanel {
+  display: grid;
+  gap: 0.6rem;
+  text-align: right;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.eventDatePrimary {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.eventDateSecondary,
+.eventLocation {
+  font-size: 0.98rem;
+}
+
+.eventContentPanel {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.eventType {
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.98rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.eventType:hover {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+}
+
+.eventTitle {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.eventPresenter {
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.6;
+}
+
+.eventPresenterName {
+  color: var(--ifm-link-color);
+}
+
+.eventActionPanel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100%;
+}
+
+.eventActionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 11rem;
+  min-height: 3.25rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.eventActionButton:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.newsCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 6rem;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.newsCard:hover,
+.videoCard:hover,
+.logoCard:hover,
+.featureCard:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1.35rem 2.4rem rgba(24, 39, 43, 0.1);
+}
+
+.newsTitle {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  min-height: 6rem;
+}
+
+.newsMeta,
+.newsDate {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.newsMeta {
+  margin-top: auto;
+  min-height: 1.4rem;
+}
+
+.newsDate {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.videoGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.videoCard {
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+
+.videoThumbnail {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.videoBody {
+  padding: 1.25rem 1.35rem 1.4rem;
+}
+
+.videoTitle {
+  margin-bottom: 0.65rem;
+  font-size: 1.35rem;
+}
+
+[data-theme='dark'] .altSection {
+  background:
+    linear-gradient(180deg, rgba(27, 33, 37, 0.84), rgba(27, 33, 37, 0.34));
+}
+
+[data-theme='dark'] .featureCard,
+[data-theme='dark'] .newsCard,
+[data-theme='dark'] .videoCard,
+[data-theme='dark'] .eventRow,
+[data-theme='dark'] .diagramCard {
+  background: linear-gradient(180deg, rgba(22, 28, 32, 0.98), rgba(27, 33, 37, 0.94));
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .logoCard {
+  background: transparent;
+}
+
+[data-theme='dark'] .logoCard:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme='dark'] .logoCard img {
+  filter: brightness(1.08) contrast(1.02);
+}
+
+[data-theme='dark'] .newsCarouselButton {
+  background: linear-gradient(180deg, rgba(22, 28, 32, 0.98), rgba(27, 33, 37, 0.94));
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .newsCarouselDot {
+  background: rgba(230, 234, 235, 0.22);
+}
+
+[data-theme='dark'] .newsCarouselDotActive {
+  background: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .eventType,
+[data-theme='dark'] .eventDatePanel,
+[data-theme='dark'] .eventPresenter {
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .heroSecondaryButton {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme='dark'] .heroSecondaryButton:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .heroInner,
+  .integrationGrid,
+  .featureGrid,
+  .newsGrid,
+  .videoGrid,
+  .eventRow {
+    grid-template-columns: 1fr;
+  }
+
+  .logoRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 2rem;
+  }
+
+  .eventDatePanel {
+    text-align: left;
+  }
+
+  .eventActionPanel {
+    justify-content: flex-start;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heroTitle {
+    font-size: 2.4rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsCarouselFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsCarouselControls {
+    gap: 0.5rem;
+  }
+
+  .newsCarouselButton {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .logoRows {
+    gap: 1.5rem;
+  }
+
+  .logoRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,72 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.backLink {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.copy {
+  min-width: 0;
+}
+
+.paragraph {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+
+.diagramPanel,
+.sequencePanel {
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.diagramImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tabs :global(.tabs) {
+  margin-bottom: 1rem;
+}
+
+.codePanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  background: var(--ifm-background-surface-color);
+  padding: 1rem;
+}
+
+.codeActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.githubLink {
+  font-weight: 600;
+}
+
+@media (max-width: 996px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

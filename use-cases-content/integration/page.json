@@ -1,0 +1,131 @@
+{
+  "title": "Ballerina for integration",
+  "slug": "integration",
+  "description": "Just write the code using the only language with integration-friendly abstractions.",
+  "hero": {
+    "eyebrow": "Integration is development. Why make life harder for developers to write integrations by giving them restricted drag-and-drop tools / DSLs or generic languages?",
+    "body": "Just write the code using the only language with integration-friendly abstractions.",
+    "image": "/images/integration_diagram.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "challengeCards",
+      "id": "solve-any-integration-challenge",
+      "title": "Solve any integration challenge",
+      "cards": [
+        {
+          "title": "Automate anything",
+          "body": [
+            "Automation is just code after all - write a main() and do whatever you want.",
+            "Use the Ballerina library to connect to any system, speak any protocol, process any data, and run it anywhere (on a VM, in Kubernetes, or just as a script).",
+            "Powerful data transformations that can be simultaneously programmed graphically and as code makes data integration a breeze."
+          ],
+          "linkLabel": "See sample automation: GitHub to Google Sheets",
+          "linkHref": "https://github.com/ballerina-guides/integration-samples/blob/main/github-pull-requests-to-gsheets/main.bal"
+        },
+        {
+          "title": "Event-driven integrations",
+          "body": [
+            "Events are core to the responsive enterprise. Ballerina makes it simple to consume or produce events.",
+            "Subscribe to any kind of event source, including WebHooks, Kafka, GraphQL, gRPC, AMQP, email, or react to system events such as file upload and do whatever you want in a type-safe development model with subscription, data binding, and error handling is already taken care of for you.",
+            "Be an event producer in any protocol you like."
+          ],
+          "linkLabel": "See sample event integration: Google Calendar to Trello Card",
+          "linkHref": "https://github.com/ballerina-guides/integration-samples/blob/main/gcalendar-new-event-to-trello-card/main.bal"
+        },
+        {
+          "title": "Integrations as APIs",
+          "body": [
+            "Ballerina's service creation abstractions make it simple to take any integration and make it reusable as an API.",
+            "Use Ballerina service types for HTTP services, WebSockets, GraphQL, gRPC, and more to take your integration code, parameterize it and make it a reusable integration.",
+            "APIs are the new DLLs. Exposing your integrations as APIs is how your integrated capability adds new value to your business."
+          ],
+          "linkLabel": "See sample integration as an API: Azure Cosmos DB data as a REST API",
+          "linkHref": "https://github.com/ballerina-guides/integration-samples/blob/main/azure-cosmosdb-data-as-rest-api/main.bal"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "edit-debug-run-in-vscode"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "network-data-program-data"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "incredible-data-transformations"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "github-copilot"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "resilience-engineering-built-in"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "built-in-transactions"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "concurrent-programming-made-simple"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "code-is-the-picture-picture-is-the-code"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "built-in-observability"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "graphql-ballerina-is-graphql"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "json-ballerina-is-json"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "http-ballerina-is-http"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "connect-with-anything"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "12-factor-apps-for-integration-problems"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "open-source-zero-lock-in"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "unleash-the-power-of-ai",
+      "links": [
+        {
+          "label": "Ballerina for AI",
+          "href": "/use-cases/ai/"
+        }
+      ]
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "trivial-hosting-in-wso2-choreo-ipaas",
+      "links": [
+        {
+          "label": "Get started with WSO2 Integration Platform for free",
+          "href": "https://wso2.com/integration-platform/"
+        }
+      ]
+    }
+  ]
+}

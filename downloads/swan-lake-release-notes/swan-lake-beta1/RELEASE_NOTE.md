@@ -1,9 +1,9 @@
 ---
-layout: ballerina-left-nav-release-notes
 title: Swan Lake Beta1
-permalink: /downloads/swan-lake-release-notes/swan-lake-beta1/
-active: swan-lake-beta1
+description: Swan Lake Beta1 - Release note
+slug: /swan-lake-release-notes/swan-lake-beta1
 ---
+
 ## Overview of Ballerina Swan Lake Beta1
 
 <em>This is the first beta release leading up to the Ballerina Swan Lake GA release.</em> 
@@ -12,7 +12,7 @@ It introduces the new language features planned for the Swan Lake GA release and
 
 ## Updating Ballerina
 
-If you are already using Ballerina, use the [Ballerina update tool](/learn/update-tool/) to directly update to Ballerina Swan Lake Beta1. 
+If you are already using Ballerina, use the [Ballerina update tool](https://ballerina.io/learn/update-tool/) to directly update to Ballerina Swan Lake Beta1. 
 
 First, run the command below to update the update tool to its latest version. 
 
@@ -26,7 +26,7 @@ Next, run the command below to update to Swan Lake Beta1.
 
 ## Installing Ballerina
 
-If you have not installed Ballerina, then download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, then download the [installers](/downloads/) to install.
 
 ## Language updates
 

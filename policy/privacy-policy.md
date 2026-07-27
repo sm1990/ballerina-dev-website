@@ -3,12 +3,19 @@ layout: ballerina-inner-page
 title: Privacy policy
 permalink: /privacy-policy/
 description: Our Privacy Policy details how Ballerina collects, uses, and protects your personal information. Your privacy is our priority.
-keywords: ballerinalang, integration, microservices, programming language, cloud native, ballerina language, privacy policy
+keywords:
+  - ballerinalang
+  - integration
+  - microservices
+  - programming language
+  - cloud native
+  - ballerina language
+  - privacy policy
 ---
 
-At WSO2, we recognize that privacy is important. This privacy policy applies to the Ballerina sites and services offered at <a target="_blank" href="https://ballerina.io/">https://ballerina.io/</a>, <a target="_blank" href="https://central.ballerina.io/">Ballerina Central</a>, <a target="_blank" href="https://blog.ballerina.io/">Ballerina Blog</a>, and any other site to which a link to these terms may appear. We’ve set out below the details of how we collect, use, share, and secure the personal information you provide. “You” or “Your” means the person visiting the Ballerina sites (the “Sites”) or using any services on it. “We,” “us,” and “our” means WSO2 LLC.
+At WSO2, we recognize that privacy is important. This privacy policy applies to the Ballerina sites and services offered at [https://ballerina.io/](https://ballerina.io/), [Ballerina Central](https://central.ballerina.io/), [Ballerina Blog](https://blog.ballerina.io/), and any other site to which a link to these terms may appear. We’ve set out below the details of how we collect, use, share, and secure the personal information you provide. “You” or “Your” means the person visiting the Ballerina sites (the “Sites”) or using any services on it. “We,” “us,” and “our” means WSO2 LLC.
 
-California residents may view WSO2's California-specific privacy policy at <a target="_blank" href="https://wso2.com/california-privacy">https://wso2.com/california-privacy</a>.
+California residents may view WSO2's California-specific privacy policy at [https://wso2.com/california-privacy](https://wso2.com/california-privacy).
 
 ## What information do we collect?
 
@@ -25,7 +32,7 @@ California residents may view WSO2's California-specific privacy policy at <a ta
 
 2. **Information collected automatically from your devices**
 
-    We also collect certain standard information that Your browser sends to every website you visit, such as your IP address, browser type, and language, access times, and referring website addresses. Our website may also place certain cookies to help you access our sites, and to track and analyze Your actions on our website such as navigation, number of visits, downloads, and search items to gain a better understanding of our visitors and their movements through the site. Please see our <a target="_blank" href="https://ballerina.io/cookie-policy/">cookie policy</a> on how we use and store cookies. 
+    We also collect certain standard information that Your browser sends to every website you visit, such as your IP address, browser type, and language, access times, and referring website addresses. Our website may also place certain cookies to help you access our sites, and to track and analyze Your actions on our website such as navigation, number of visits, downloads, and search items to gain a better understanding of our visitors and their movements through the site. Please see our [cookie policy](https://ballerina.io/cookie-policy/) on how we use and store cookies. 
 
 4. **Information received from third parties**
 
@@ -53,14 +60,14 @@ We will only collect and process personal data about You where we have lawful ba
 - The processing is necessary for us to comply with a relevant legal obligation; or
 - The processing is in our legitimate commercial interests and necessary for us to administer our business, subject to Your interests and fundamental rights.
 
-Where we rely on Your consent to process personal data, You have the right to withdraw or decline Your consent at any time, and where we rely on legitimate interests, You have the right to object. If You have any questions about the lawful bases upon which we collect and use Your personal data or wish to withdraw consent or object, You can submit a request via <a target="_blank" href="mailto:dpo@wso2.com">dpo@wso2.com</a> or through the details listed in the [Information about data controllers, processors, and how to contact us](#information-about-data-controllers-processors-and-how-to-contact-us) section below.
+Where we rely on Your consent to process personal data, You have the right to withdraw or decline Your consent at any time, and where we rely on legitimate interests, You have the right to object. If You have any questions about the lawful bases upon which we collect and use Your personal data or wish to withdraw consent or object, You can submit a request via [dpo@wso2.com](mailto:dpo@wso2.com) or through the details listed in the [Information about data controllers, processors, and how to contact us](#information-about-data-controllers-processors-and-how-to-contact-us) section below.
 
 
 ## Who is your information shared with?
 
 We do not sell, trade, or otherwise share your information with outside parties. However, we do share your information with our subsidiaries, affiliates, service providers, and partners who assist us in operating our website, conducting our business, or servicing you.
 
-We sometimes need to give our service providers who help us run our website and services access to the data we have in order for them to perform those services. They are only authorized to use information that is strictly relevant for them to perform their tasks, and we ensure that they are under obligations of confidentiality to us so that your data is secure. For a full list of third-party service providers used by Ballerina (processors), please visit <a target="_blank" href="/policy/ballerina-subprocessor-list.pdf">Ballerina processor list</a>.
+We sometimes need to give our service providers who help us run our website and services access to the data we have in order for them to perform those services. They are only authorized to use information that is strictly relevant for them to perform their tasks, and we ensure that they are under obligations of confidentiality to us so that your data is secure. For a full list of third-party service providers used by Ballerina (processors), please visit [Ballerina processor list](/policy/ballerina-subprocessor-list.pdf).
 
 We may share your data with our subsidiaries or affiliates within our corporate group. WSO2 ‘s parent company is WSO2 LLC, which is located in the United States of America. Our affiliates are WSO2 UK Limited (located in the United Kingdom), WSO2 Lanka (Private) Limited (located in Sri Lanka), and WSO2 Brasil Tecnologia E Software Ltd (located in Brazil) and any other affiliates set out in our [Contact us](https://wso2.com/contact/?src=contact) page. We share information within this group because these entities also carry out support, marketing, account management, and technical operations for WSO2 that are relevant to the provision of the website and services.
 
@@ -102,11 +109,11 @@ We may retain your information for a period of time consistent with the original
 
 ## Your rights to your data and how to manage your preferences
 
-WSO2 acknowledges your right to access your data. If information pertaining to you as an individual has been submitted to us, then you have the right to access, correct, or edit your data. If you wish, we can provide all the personal information on our records to you or to someone you nominate in a portable format as well. Our contact details are provided at the bottom of the page, or you may submit a request through <a target="_blank" href="mailto:dpo@wso2.com">dpo@wso2.com</a>. All you have to do is request, and we are happy to help.
+WSO2 acknowledges your right to access your data. If information pertaining to you as an individual has been submitted to us, then you have the right to access, correct, or edit your data. If you wish, we can provide all the personal information on our records to you or to someone you nominate in a portable format as well. Our contact details are provided at the bottom of the page, or you may submit a request through [dpo@wso2.com](mailto:dpo@wso2.com). All you have to do is request, and we are happy to help.
 
 You can ask us to stop using all or some of your personal data (e.g., if we have no legal right to keep using it) or to limit our use of it (e.g. if your personal data is inaccurate or unlawfully held).
 
-You may also choose to delete your data from our website at any time you choose and unsubscribe from any Ballerina mailing lists you are on. You can unsubscribe from our marketing emails by clicking on the unsubscribe link which is at the bottom of our marketing emails or by sending an email to <a target="_blank" href="mailto:dpo@wso2.com">dpo@wso2.com</a>. Please note that deleting your data may affect the provision of some services.
+You may also choose to delete your data from our website at any time you choose and unsubscribe from any Ballerina mailing lists you are on. You can unsubscribe from our marketing emails by clicking on the unsubscribe link which is at the bottom of our marketing emails or by sending an email to [dpo@wso2.com](mailto:dpo@wso2.com). Please note that deleting your data may affect the provision of some services.
 
 We only ever retain your personal data even after you have ceased using our services, requested to unsubscribe or delete your data only if reasonably necessary to comply with our legal obligations (including law enforcement requests), meet regulatory requirements, resolve disputes, maintain security, prevent fraud and abuse, or fulfill your request to "unsubscribe" from further messages from us.
 
@@ -116,13 +123,13 @@ At our discretion, we may include or offer third-party products or services on o
 
 ## Information about our website
 
-This privacy policy applies only to information collected through the Sites and not to information collected offline. Please also visit our <a target="_blank" href="https://ballerina.io/terms-of-service/">terms of service</a> relating to use, disclaimers, indemnities, and limitations of liability governing the use of our site and services.
+This privacy policy applies only to information collected through the Sites and not to information collected offline. Please also visit our [terms of service](https://ballerina.io/terms-of-service/) relating to use, disclaimers, indemnities, and limitations of liability governing the use of our site and services.
 
 ## Information about data controllers, processors, and how to contact us
 
 In relation to this website, the Controller of your data is WSO2 LLC, USA. However, where we provide products or services that we have indicated are subject to their own terms, we may only be a Processor of your data with regard to such products or services. 
 
-If you are located within the European Union or the European Economic Area, WSO2 Germany GmbH, based in Germany, is the EU representative of WSO2 LLC. You may contact our Data Protection Officer by sending an email to <a target="_blank" href="mailto:dpo@wso2.com">dpo@wso2.com</a> or by post at: WSO2 Germany GmbH, Maximiliansplatz 22, c/o Bird & Bird LLP, 80333 Munich.
+If you are located within the European Union or the European Economic Area, WSO2 Germany GmbH, based in Germany, is the EU representative of WSO2 LLC. You may contact our Data Protection Officer by sending an email to [dpo@wso2.com](mailto:dpo@wso2.com) or by post at: WSO2 Germany GmbH, Maximiliansplatz 22, c/o Bird & Bird LLP, 80333 Munich.
 
 If you have any issues with regard to your data on our website, then in addition to informing us, you also have the right to write directly to the independent data protection monitoring organization in your country. 
 

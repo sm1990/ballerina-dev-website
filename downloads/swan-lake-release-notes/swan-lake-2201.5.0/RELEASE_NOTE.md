@@ -1,8 +1,7 @@
 ---
-layout: ballerina-left-nav-release-notes
-title: 2201.5.0 (Swan Lake) 
-permalink: /downloads/swan-lake-release-notes/2201.5.0/
-active: 2201.5.0
+title: 2201.5.0 (Swan Lake)
+description: 2201.5.0 (Swan Lake) - Release note
+slug: /swan-lake-release-notes/swan-lake-2201.5.0
 ---
 
 ## Overview of Ballerina Swan Lake 2201.5.0
@@ -11,14 +10,14 @@ active: 2201.5.0
 
 ## Update Ballerina
 
-Update your current Ballerina installation directly to 2201.5.0 using the [Ballerina Update Tool](/learn/update-tool/) as follows.
+Update your current Ballerina installation directly to 2201.5.0 using the [Ballerina Update Tool](https://ballerina.io/learn/update-tool/) as follows.
 
 1. Run `bal update` to get the latest version of the Update Tool.
 2. Run `bal dist pull 2201.5.0` to update to this latest distribution.
 
 ## Install Ballerina
 
-If you have not installed Ballerina, download the [installers](/downloads/#swanlake) to install.
+If you have not installed Ballerina, download the [installers](/downloads/) to install.
 
 >**Note:** From the 2201.5.0 release onwards, a [new installer](https://dist.ballerina.io/downloads/2201.5.0/ballerina-2201.5.0-swan-lake-macos-arm-x64.pkg) is introduced to support the macOS-ARM platform.
 
@@ -69,7 +68,7 @@ public function main() {
 }
 ```
 
-For more information, see the new [RegExp type example](/learn/by-example/regexp-type), [RegExp operations example](/learn/by-example/regexp-operations), [API Documentation](https://central.ballerina.io/ballerina/lang.regexp/latest), and [Regular expressions feature guide](/learn/advanced-general-purpose-language-features/#regular-expressions).
+For more information, see the new [RegExp type example](/learn/by-example/regexp-type), [RegExp operations example](/learn/by-example/regexp-operations-overview/), [API Documentation](https://central.ballerina.io/ballerina/lang.regexp/latest), and [Regular expressions feature guide](/learn/advanced-general-purpose-language-features/#regular-expressions).
 
 ### Bug fixes
 
@@ -208,7 +207,7 @@ To view bug fixes, see the [GitHub milestone for 2201.5.0 (Swan Lake)](https://g
 
 #### `regex` package
 
-- The `regex` package has been deprecated and will no longer be maintained or updated. Instead, it is recommended to use the [`ballerina/lang.regexp`](https://lib.ballerina.io/ballerina/lang.regexp/latest) library. For more information, see the new [RegExp type example](/learn/by-example/regexp-type), [RegExp operations example](/learn/by-example/regexp-operations), and [Regular expressions feature guide](/learn/advanced-general-purpose-language-features/#regular-expressions).
+- The `regex` package has been deprecated and will no longer be maintained or updated. Instead, it is recommended to use the [`ballerina/lang.regexp`](https://lib.ballerina.io/ballerina/lang.regexp/latest) library. For more information, see the new [RegExp type example](/learn/by-example/regexp-type), [RegExp operations example](/learn/by-example/regexp-operations-overview/), and [Regular expressions feature guide](/learn/advanced-general-purpose-language-features/#regular-expressions).
 
 ### Bug fixes
 

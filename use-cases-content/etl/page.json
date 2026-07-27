@@ -1,0 +1,88 @@
+{
+  "title": "Ballerina for ETL",
+  "slug": "etl",
+  "description": "Write code with integration-friendly abstractions.",
+  "hero": {
+    "eyebrow": "Extracting, transforming, and loading data often involves dealing with intricate, time-consuming processes, leading to high costs and operational inefficiencies.",
+    "body": "Ballerina simplifies ETL with its programmable approach. It excels in complex data operations, integrations, and deployment flexibility, ensuring a scalable and adaptable ETL experience.",
+    "image": "/images/etl-sm-banner.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "groupedBlades",
+      "id": "drive-data-interactions-with-models",
+      "title": "Data extraction (E)",
+      "items": [
+        {
+          "source": "drive-data-interactions-with-models"
+        },
+        {
+          "source": "make-data-extraction-smarter"
+        },
+        {
+          "source": "extract-data-from-github"
+        }
+      ]
+    },
+    {
+      "type": "groupedBlades",
+      "id": "eleminating-redundency-for-cleaner-data",
+      "title": "Data transformation (T)",
+      "items": [
+        {
+          "source": "eleminating-redundency-for-cleaner-data",
+          "tabs": [
+            {
+              "label": "Sample 1",
+              "source": "clean1"
+            },
+            {
+              "label": "Sample 2",
+              "source": "clean2"
+            }
+          ],
+          "links": [
+            {
+              "label": "Sample 1: Remove duplicates based on composite fields",
+              "href": "https://github.com/ballerina-guides/etl-samples/blob/main/remove-duplicates/main.bal"
+            },
+            {
+              "label": "Sample 2: Remove duplicates based on approximation",
+              "href": "https://github.com/ballerina-guides/etl-samples/blob/main/remove-approximate-duplicates/main.bal"
+            }
+          ]
+        },
+        {
+          "source": "refining-data-excellence"
+        },
+        {
+          "source": "data-enrichment-magic"
+        },
+        {
+          "source": "reshaping-data-with-data-mapper"
+        },
+        {
+          "source": "precision-cleaning-with-regex"
+        }
+      ]
+    },
+    {
+      "type": "groupedBlades",
+      "id": "load-from-kafka-topics",
+      "title": "Data loading (L)",
+      "items": [
+        {
+          "source": "load-from-kafka-topics"
+        },
+        {
+          "source": "load-data-to-data-warehouse"
+        },
+        {
+          "source": "load-data-to-google-sheets"
+        }
+      ]
+    }
+  ]
+}

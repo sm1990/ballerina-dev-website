@@ -1,41 +1,39 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-.idea
-
-# dependencies
-**/node_modules
+# Dependencies
+/node_modules
+**/node_modules/
+/.pnpm-store
 /.pnp
 .pnp.js
 .github/scripts/bbe/package-lock.json
 
-# testing
+# Testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
+# Production
 /build
+/.next
+/out
 
-# misc
+# Generated files
+.docusaurus
+.cache-loader
+/tmp
+/test-output
+
+# Misc
+.idea
 .DS_Store
 *.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# vercel
 .vercel
 
-#folders
+# Tooling
 .github/scripts/bal_proposals_bot/target/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

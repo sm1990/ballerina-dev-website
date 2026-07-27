@@ -1,0 +1,56 @@
+{
+  "title": "Ballerina for implementing integrations with Salesforce",
+  "slug": "salesforce",
+  "description": "Write code with salesforce-friendly abstractions.",
+  "hero": {
+    "eyebrow": "Many organizations use Salesforce to centralize customer information, aiming to enhance customer service and sales processes. In this context, it is critical to integrate Salesforce with all customer touchpoints in order to unlock its full potential.",
+    "body": "Ballerina, a language specifically designed for integrations, can facilitate the integration of Salesforce with all relevant systems and support any complex Salesforce integration use case.",
+    "image": "/images/Salesforce_Integrations.png",
+    "ctaLabel": "Download Ballerina",
+    "ctaHref": "/downloads/"
+  },
+  "sections": [
+    {
+      "type": "singleCode",
+      "source": "shopify"
+    },
+    {
+      "type": "singleCode",
+      "source": "servicenow"
+    },
+    {
+      "type": "singleCode",
+      "source": "datasources"
+    },
+    {
+      "type": "singleCode",
+      "source": "notifications"
+    },
+    {
+      "type": "singleCode",
+      "source": "productivity"
+    },
+    {
+      "type": "singleCode",
+      "source": "realtime"
+    },
+    {
+      "type": "singleCode",
+      "source": "b2b"
+    },
+    {
+      "type": "singleCode",
+      "source": "ai"
+    },
+    {
+      "type": "codeImageSplit",
+      "source": "batch-data",
+      "links": [
+        {
+          "label": "Explore WSO2 Integration Platform",
+          "href": "https://wso2.com/integration-platform/"
+        }
+      ]
+    }
+  ]
+}
