@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 
-const sourceRepo = '/Users/sarani/Downloads/codebase/ballerina-dev-website';
+const sourceRepo = process.cwd();
 const examplesDir = path.join(sourceRepo, 'examples');
 const generatorDir = path.join(sourceRepo, '.github/scripts/bbe');
 const convertScript = path.join(generatorDir, 'convertMarkdown.js');

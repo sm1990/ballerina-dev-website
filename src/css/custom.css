@@ -86,6 +86,131 @@ body {
   max-width: 72ch;
 }
 
+.shikiCodePanel {
+  position: relative;
+  margin: 1rem 0 1.5rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.shikiCodeActions {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shikiCodeCopyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-background-color) 92%, transparent);
+  color: var(--ifm-color-emphasis-800);
+  cursor: pointer;
+  box-shadow: 0 0.35rem 1rem rgba(24, 39, 43, 0.06);
+  appearance: none;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.shikiCodeCopyButton:hover {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  box-shadow:
+    0 0.35rem 1rem rgba(24, 39, 43, 0.06),
+    0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.shikiCodeCopyButton:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ifm-color-primary) 42%, white);
+  outline-offset: 3px;
+}
+
+.shikiCodeIcon {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+}
+
+.shikiCodeBlock pre.shiki,
+.shikiCodeBlock pre.plainCodeBlock {
+  margin: 0;
+  padding: 1rem 1.1rem 1.15rem;
+  overflow-x: auto;
+  background-color: var(--shiki-light-bg, #f6f8fa) !important;
+  font-family:
+    ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
+  font-size: 13.6px;
+  line-height: 24px;
+  box-shadow: 0 1rem 2rem rgba(24, 39, 43, 0.06);
+}
+
+.shikiCodeBlock pre.plainCodeBlock {
+  color: var(--ifm-color-emphasis-900);
+}
+
+.shikiCodeBlock code {
+  display: block;
+  white-space: normal;
+  font-size: 0;
+  line-height: 0;
+}
+
+.shikiCodeBlock .line {
+  display: block;
+  white-space: pre;
+  font-size: 13.6px;
+  line-height: 24px;
+}
+
+.shikiCodeBlock .shiki-themes {
+  background-color: var(--shiki-light-bg, #f6f8fa) !important;
+  color: var(--shiki-light, #24292f) !important;
+}
+
+[data-theme='dark'] .shikiCodeCopyButton {
+  border-color: rgba(127, 151, 162, 0.34);
+  background: rgba(29, 36, 42, 0.98);
+  color: #edf4f7;
+}
+
+[data-theme='dark'] .shikiCodeCopyButton:hover {
+  color: #7de2e0;
+  border-color: #49c8c7;
+  background: rgba(33, 41, 47, 0.98);
+}
+
+[data-theme='dark'] .shikiCodeBlock .shiki {
+  background-color: var(--shiki-dark-bg, #0f1720) !important;
+  color: var(--shiki-dark, #e6edf3) !important;
+}
+
+[data-theme='dark'] .shikiCodeBlock .shiki span {
+  color: var(--shiki-dark) !important;
+}
+
+[data-theme='dark'] .shikiCodeBlock .shiki-themes {
+  background-color: var(--shiki-dark-bg, #0f1720) !important;
+  color: var(--shiki-dark, #e6edf3) !important;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.24);
+}
+
+[data-theme='dark'] .shikiCodeBlock pre.plainCodeBlock {
+  background-color: #0f1720 !important;
+  color: #e6edf3;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.24);
+}
+
 .legal-doc .theme-doc-markdown {
   max-width: 86ch;
 }

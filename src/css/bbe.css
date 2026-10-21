@@ -53,19 +53,26 @@
 }
 
 .bbeCode > .bbe-col:first-child button,
-.bbeOutput > .bbe-col:first-child button {
+.bbeCode > .bbe-col:first-child a,
+.bbeOutput > .bbe-col:first-child button,
+.bbeOutput > .bbe-col:first-child a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2rem;
   height: 2rem;
   border-radius: 0.35rem;
+  color: var(--ifm-color-emphasis-900);
   cursor: pointer;
 }
 
 .bbeCode > .bbe-col:first-child button:hover,
-.bbeOutput > .bbe-col:first-child button:hover {
+.bbeCode > .bbe-col:first-child a:hover,
+.bbeOutput > .bbe-col:first-child button:hover,
+.bbeOutput > .bbe-col:first-child a:hover {
   background: rgba(82, 195, 194, 0.12);
+  color: var(--ifm-color-emphasis-900);
+  text-decoration: none;
 }
 
 .bbeCode > .bbe-col:nth-child(2),
@@ -132,6 +139,26 @@
 
 [data-theme='dark'] .bbeOutput pre {
   background: #020617;
+}
+
+[data-theme='dark'] .bbeCode > .bbe-col:first-child button,
+[data-theme='dark'] .bbeCode > .bbe-col:first-child a {
+  color: #c9d1d9;
+}
+
+[data-theme='dark'] .bbeCode > .bbe-col:first-child button:hover,
+[data-theme='dark'] .bbeCode > .bbe-col:first-child a:hover {
+  color: #ffffff;
+}
+
+.bbeOutput > .bbe-col:first-child button,
+.bbeOutput > .bbe-col:first-child a {
+  color: #e5e7eb;
+}
+
+.bbeOutput > .bbe-col:first-child button:hover,
+.bbeOutput > .bbe-col:first-child a:hover {
+  color: #ffffff;
 }
 
 .bbeOutput code {

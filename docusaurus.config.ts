@@ -1,7 +1,40 @@
-import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type * as PluginContentDocs from '@docusaurus/plugin-content-docs';
+import remarkShikiCode from './scripts/remark-shiki-code.mjs';
+
+const githubSourceBaseUrl =
+  'https://github.com/ballerina-platform/ballerina-dev-website/tree/master';
+
+const learnToolsEditPathOverrides: Record<string, string | null> = {
+  'development-tutorials/source-code-dependencies/style-guide/customize-formatting.md':
+    'swan-lake/development-tutorials/source-code-dependencies/customize-formatting.md',
+  'install-ballerina/installation-options.md':
+    'downloads/installation-options/installation-options.md',
+  'integration-tools/intro.md': null,
+  'references/ballerina-specifications.md': null,
+};
+
+function getLearnToolsEditUrl({docPath}: {docPath: string}) {
+  const normalizedDocPath = docPath.replace(/\\/g, '/');
+  const hasOverride = Object.prototype.hasOwnProperty.call(
+    learnToolsEditPathOverrides,
+    normalizedDocPath,
+  );
+
+  let sourcePath = hasOverride
+    ? learnToolsEditPathOverrides[normalizedDocPath]
+    : `swan-lake/${normalizedDocPath}`;
+
+  if (normalizedDocPath.startsWith('integration/integration-tutorials/')) {
+    sourcePath = `swan-lake/${normalizedDocPath.replace(
+      'integration/integration-tutorials/',
+      'integration-tutorials/',
+    )}`;
+  }
+
+  return sourcePath ? `${githubSourceBaseUrl}/${sourcePath}` : undefined;
+}
 
 const config: Config = {
   title: 'Ballerina',
@@ -105,8 +138,8 @@ const config: Config = {
         path: 'learn-tools-docs',
         routeBasePath: 'learn',
         sidebarPath: './sidebarsLearnTools.ts',
-        editUrl:
-          'https://github.com/ballerina-platform/ballerina-dev-website/tree/master/',
+        remarkPlugins: [remarkShikiCode],
+        editUrl: getLearnToolsEditUrl,
       } satisfies PluginContentDocs.Options,
     ],
     [
@@ -276,10 +309,6 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Ballerina.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.github,
     },
   } satisfies Preset.ThemeConfig,
 };

@@ -26,13 +26,16 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
 
-      - name: Install dependencies
-        run: |
-          cd .github/scripts/bbe
-          npm install
-          cd ../../..
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install BBE generator dependencies
+        working-directory: .github/scripts/bbe
+        run: npm install
 
       - name: Clone ballerina-distribution
         run: |
@@ -41,22 +44,18 @@ jobs:
           git checkout -b ${{ github.event.inputs.distribution_branch }} origin/${{ github.event.inputs.distribution_branch }} || git checkout ${{ github.event.inputs.distribution_branch }}
           cd ..
 
-      - name: Remove old BBE pages
-        run: rm -rf swan-lake/by-example/*
-
       - name: Copy examples and index.json content
         run: |
+          rm -rf examples
           cp -r ballerina-distribution/examples .
-          cp examples/index.json swan-lake/by-example/all-bbes.json
 
       - name: Generate BBEs
-        run: node .github/scripts/bbe/convertMarkdown.js "examples" "swan-lake/by-example"
-
-      - name: Generate BBE navigation
-        run: node .github/scripts/bbe/generateNav.js "examples" "_data"
+        run: |
+          node ./scripts/generate-bbe-source.mjs
+          node ./scripts/import-bbe-as-docs.mjs
 
       - name: Format code using Prettier
-        run: npx prettier -w swan-lake/by-example
+        run: npx prettier -w bbe-docs src/generated/bbe sidebarsBbe.ts _data/ballerina-by-example-nav.yml
 
       - name: Push BBE changes
         run: |
@@ -65,7 +64,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-          git add swan-lake/by-example _data/ballerina-by-example-nav.yml
+          git add bbe-docs generated/bbe src/generated/bbe sidebarsBbe.ts _data/ballerina-by-example-nav.yml
           git commit --allow-empty -m 'Update Ballerina Swan Lake by Examples'
 
           git push --set-upstream origin automate-bbes-$GITHUB_SHA

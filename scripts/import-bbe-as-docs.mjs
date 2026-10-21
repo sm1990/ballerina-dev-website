@@ -61,6 +61,7 @@ function transformContent(source) {
       'import {copyToClipboard, extractOutput} from "@site/src/utils/bbe";',
     )
     .replace('import Link from "next/link";', 'import Link from "@docusaurus/Link";')
+    .replace(/(<Link\b[\s\S]*?)\bhref=/g, '$1to=')
     .replace(/DOMPurify\.sanitize\(/g, 'sanitizeHtml(')
     .replace(/fill-rule=/g, 'fillRule=')
     .replace(/href="(\/learn\/by-example\/[^"/?#]+)"/g, 'href="$1/"')

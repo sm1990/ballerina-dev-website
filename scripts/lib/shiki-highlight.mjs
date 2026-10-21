@@ -4,11 +4,20 @@ let highlighterPromise;
 
 const supportedLanguages = [
   'ballerina',
+  'bash',
+  'console',
   'graphql',
-  'typescript',
+  'json',
+  'markdown',
+  'nginx',
+  'properties',
   'protobuf',
-  'toml',
+  'shell',
+  'shellscript',
   'sql',
+  'toml',
+  'typescript',
+  'yaml',
 ];
 
 function getHighlighter() {
@@ -24,9 +33,11 @@ function getHighlighter() {
 
 export function inferLanguage(code, explicitLanguage) {
   if (explicitLanguage) {
-    if (explicitLanguage === 'ts') return 'typescript';
-    if (explicitLanguage === 'proto') return 'protobuf';
-    return explicitLanguage;
+    const language = explicitLanguage.toLowerCase();
+    if (language === 'ts') return 'typescript';
+    if (language === 'proto') return 'protobuf';
+    if (language === 'sh') return 'bash';
+    return language;
   }
 
   const source = code.trim();
@@ -57,6 +68,18 @@ export function inferLanguage(code, explicitLanguage) {
     return 'toml';
   }
 
+  if (/^\s*\$ /m.test(source) || /^\s*(bal|git|curl|export|set|cd|mkdir|npm|pnpm)\b/m.test(source)) {
+    return 'bash';
+  }
+
+  if (/^[\s\S]*\/\n[\s\S]*(├──|└──)/.test(source)) {
+    return 'text';
+  }
+
+  if (/^\s*[{[]/.test(source)) {
+    return 'json';
+  }
+
   if (/^\s*(SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER)\b/im.test(source)) {
     return 'sql';
   }
@@ -67,11 +90,20 @@ export function inferLanguage(code, explicitLanguage) {
 export async function highlightCodeHtml(code, explicitLanguage) {
   const language = inferLanguage(code, explicitLanguage);
   const highlighter = await getHighlighter();
-  return highlighter.codeToHtml(code, {
+  const options = {
     lang: language,
     themes: {
       light: 'github-light',
       dark: 'github-dark',
     },
-  });
+  };
+
+  try {
+    return highlighter.codeToHtml(code, options);
+  } catch {
+    return highlighter.codeToHtml(code, {
+      ...options,
+      lang: 'text',
+    });
+  }
 }

@@ -24,7 +24,7 @@ export default function StringTemplates({codeSnippets}) {
         <Col sm={6}>
       <Link
         title="Raw templates"
-        href="/learn/by-example/raw-templates/"
+        to="/learn/by-example/raw-templates/"
       >
         <div className="btnContainer d-flex align-items-center me-auto">
           <svg
@@ -60,7 +60,7 @@ export default function StringTemplates({codeSnippets}) {
         <Col sm={6}>
       <Link
         title="XML templates"
-        href="/learn/by-example/xml-templates/"
+        to="/learn/by-example/xml-templates/"
       >
         <div className="btnContainer d-flex align-items-center ms-auto">
           <div className="d-flex flex-column me-4">
